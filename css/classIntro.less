@@ -1,33 +1,37 @@
-.topImg{
-	height:370px;
-	width:100%;
-	text-align: center;
-	line-height: 370px;
-	font-size: 60px;
-	background-color: #999;
+.topImg {
+    height: 370px;
+    width: 100%;
+    text-align: center;
+    line-height: 370px;
+    font-size: 60px;
+    background-color: #999;
 }
+
 // 主题内容样式
-.intro-nav{
-	width:1200px;
-	margin:0 auto;
-	overflow: hidden;
-	height:100px;
-	ul{
-		li{
-			width:50%;
-			text-align: center;
-			float: left;
-			line-height: 100px;
-			span{
-				font-weight: bold;
-				margin-right: 20px;
-			}
-		}
-	}
+.intro-nav {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 100px;
+    ul {
+        li {
+            width: 50%;
+            text-align: center;
+            float: left;
+            line-height: 100px;
+            span {
+                font-weight: bold;
+                margin-right: 20px;
+            }
+        }
+    }
 }
+
 .classInfo {
+    width: 100%;
     margin-top: 30px;
-    width: 1200px;
+    max-width: 1200px;
     margin: 30px auto;
     overflow: hidden;
     ul {
@@ -55,11 +59,65 @@
                 padding: 0 10px;
             }
         }
-        li:nth-of-type(1){
-        	margin:0;
+        li:nth-of-type(1) {
+            margin: 0;
         }
-        li:nth-of-type(4){
-        	margin:0;
+        li:nth-of-type(4) {
+            margin: 0;
+        }
+    }
+}
+
+@media all and(max-width:768px) {
+    .classInfo {
+        ul {
+            width: 95%;
+            margin: 0 auto;
+            li {
+                width: 45%;
+                margin-left: 9%;
+                margin-bottom: 20px;
+            }
+            li:nth-of-type(3){
+                margin-left:0;
+            }
+            li:nth-of-type(4){
+                margin-left:9%;
+                margin-bottom: 20px;
+            }
+            li:nth-of-type(5){
+                margin-left:0;
+               
+            }
+        }
+    }
+}
+@media all and(max-width:480px) {
+    .classInfo {
+        ul {
+            width: 95%;
+            margin: 0 auto;
+            li {
+                width: 100%;
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
+            li:nth-of-type(1){
+                margin-bottom: 20px;
+            }
+            li:nth-of-type(4){
+                margin-left: 0px;
+            }
+           
+        }
+    }
+    .intro-nav {
+        ul{
+            li{
+                span{
+                    margin-right: 10px;
+                }
+            }
         }
     }
 }

@@ -7,19 +7,27 @@
 	background-color: #999;
 }
 .info{
+	display: block;
 	font-size: 16px;
 	color:#666;
-	width:710px;
-	margin:0 auto;
+	width:98%;
+	max-width:710px;
 	text-align: center;
 	line-height: 28px;
-
+	overflow: hidden;
+	margin:0 auto;
 }
 .img{
-	width:600px;
+	width:98%;
 	height:400px;
 	margin:40px auto;
 	font-size: 60px;
 	border:1px solid #000;
 	line-height: 400px;
+}
+@media all and(max-width:768px){
+
+	.img{
+		height:300px;
+	}
 }
