@@ -103,12 +103,13 @@
 .classInfo {
     margin-top: 30px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1240px;
     margin: 30px auto;
     overflow: hidden;
     position: relative;
     ul {
-        width: 95%;
+         width: 100%;
+         max-width: 1240px;
         margin: 0 auto;
         li {
             float: left;
@@ -134,7 +135,7 @@
         }
     }
     span.btn {
-        width: 3%;
+        width: 20px;
         height: 100%;
         top: 50%;
         display: block;
@@ -193,22 +194,17 @@
     overflow: hidden;
     position: relative;
     ul {
-        width: 95%;
+       
         margin: 0 auto;
         li {
-            width: 23%;
+            width: 21.8%;
             height: 212px;
             float: left;
-            margin-left: 2%;
+            margin-left: 2.5%;
             border: 1px solid #ccc;
             margin-bottom: 20px;
         }
-        li:nth-of-type(1) {
-            margin: 0;
-        }
-        li:nth-of-type(5) {
-            margin: 0;
-        }
+        
     }
 }
 
@@ -216,18 +212,19 @@
 //教师风采
 .teacher-list {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1240px;
     margin: 30px auto;
     overflow: hidden;
     position: relative;
     ul {
-        width: 95%;
+        width: 100%;
+        max-width: 1240px;
         margin: 0 auto;
         li {
-            width: 23%;
+            width: 21.8%;
             float: left;
             position: relative;
-            margin-left: 1.5%;
+            margin-left: 2.5%;
             .img {
                 width: 180px;
                 height: 180px;
@@ -268,13 +265,11 @@
                 }
             }
         }
-        li:nth-of-type(1) {
-            // margin:0;
-        }
+        
     }
     span.btn {
         display: block;
-        width: 2%;
+        width: 20px;
         float: left;
         text-align: center;
         position: absolute;
@@ -298,13 +293,10 @@
     margin: 30px auto;
     overflow: hidden;
     ul {
-        width: 95%;
-        margin: 0 auto;
         li {
-            width: 32%;
+            width: 30%;
             float: left;
-            margin-left: 1.3%;
-            box-sizing: border-box;
+            margin-left: 2.5%;
             .upper {
                 width: 100%;
                 border: 1px solid #000;
@@ -328,9 +320,7 @@
                 margin: 10px 0;
             }
         }
-        li:nth-of-type(1) {
-            margin: 0;
-        }
+        
     }
 }
 
@@ -390,7 +380,61 @@
     overflow: hidden;
     clear: both;
 }
-
+@media all and(min-width:769px) and (max-width:968px) {
+    .classInfo {
+        ul {
+            li {
+                width: 46.2%;
+               
+                margin-bottom: 20px;
+            }
+            
+        }
+        span.btn {
+            display: none;
+        }
+    }
+    .hj-picList {
+        ul {
+            li {
+                width: 30%;
+            }
+            
+        }
+        span.btn {
+            display: none;
+        }
+    }
+    .teacher-list {
+        ul {
+            li {
+                width:46.25%;
+                .t-info{
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+            
+        }
+        span.btn {
+            display: none;
+        }
+    }
+    .news {
+        ul {
+            li {
+                width: 46.25%;
+            }
+           
+        }
+    }
+    .ab-content{
+        span{
+            font-size: 16px;
+        }
+    }
+}
 @media all and (max-width:768px) {
     .public-Title {
         
@@ -401,16 +445,9 @@
     .classInfo {
         ul {
             li {
-                width: 48%;
-                margin-left: 2%;
+                width: 46.2%;
+                margin-bottom: 20px;
             }
-            li:nth-of-type(1){
-                margin-left: 0;
-            }
-            li:nth-of-type(3){
-                margin-left: 0;
-            }
-
         }
         span.btn{
             display: none;
@@ -421,14 +458,8 @@
             width: 100%;
             margin: 0 auto;
             li {
-                width: 30%;
-                margin-left: 2%;
-            }
-            li:nth-of-type(1) {
-                margin-left: 2%;
-            }
-            li:nth-of-type(5) {
-                margin-left: 2%;
+                width:46.25%;
+              
             }
         }
         span.btn {
@@ -437,19 +468,12 @@
     }
     .teacher-list {
         ul {
-            width: 95%;
-            margin: 0 auto;
-            overflow: hidden;
+            
             li {
-                width: 47%;
-                margin-left: 5.5%;
+                width: 46.25%;
+                
             }
-            li:nth-of-type(1) {
-                margin: 0;
-            }
-            li:nth-of-type(3) {
-                margin: 0;
-            }
+            
         }
         span.btn {
             display: none;
@@ -457,18 +481,11 @@
     }
     .news {
         ul {
-            width: 95%;
-            margin: 0 auto;
             li {
-                width: 48%;
-                margin-left: 4%;
+                width: 46.25%;
+               
             }
-            li:nth-of-type(1) {
-                margin: 0;
-            }
-            li:nth-of-type(3) {
-                margin: 0;
-            }
+           
         }
     }
     .news-two {
@@ -499,9 +516,10 @@
     .classInfo {
         ul {
             li {
-                width: 100%;
-                margin: 0;
+                width: 95%;
+                margin: 0 auto;
                 margin-bottom: 20px;
+                float: none;
             }
         }
         span.btn {
@@ -513,34 +531,20 @@
             width: 95%;
             margin: 0 auto;
             li {
-                width: 100%;
-                margin-left: 0;
+                width: 95%;
+                margin:0 auto;
                 margin-bottom: 20px;
+                float: none;
             }
-            li:nth-of-type(1) {
-                margin-left: 0;
-                margin-bottom: 20px;
-            }
-            // li:nth-of-type(3) {
-            //   margin-left: 2%;
-            // }
-            li:nth-of-type(5) {
-                margin-left: 0;
-                margin-bottom:20px;
-            }
-            // li:nth-of-type(7) {
-            //     margin-left: 2%;
-            // }
         }
     }
     .teacher-list {
         ul {
-            width: 95%;
-            margin: 0 auto;
-            overflow: hidden;
             li {
-                width: 100%;
-                margin: 0;
+                width: 95%;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                float: none;
             }
         }
         span.btn {
@@ -549,18 +553,13 @@
     }
     .news {
         ul {
-            width: 95%;
-            margin: 0 auto;
             li {
-                width: 100%;
-                margin-left: 0;
+                width: 95%;
+                margin:0 auto;
+                float:none;
+                margin-bottom: 20px;
             }
-            li:nth-of-type(1) {
-                margin: 0;
-            }
-            li:nth-of-type(3) {
-                margin: 0;
-            }
+            
         }
     }
     .news-two {
@@ -574,107 +573,13 @@
         }
     }
 }
-@media all and(max-width:720px){
-    .news {
-        ul {
-            width: 95%;
-            margin: 0 auto;
-            li {
-                width: 100%;
-                margin-left: 0;
+
+@media all and (max-width:649px) and (min-width:481px){
+    .news{
+        ul{
+            li{
+                width:46.25%;
             }
-            li:nth-of-type(1) {
-                margin: 0;
-            }
-            li:nth-of-type(3) {
-                margin: 0;
-            }
-        }
-    }
-}
-@media all and(min-width:769px) and (max-width:968px) {
-    .classInfo {
-        ul {
-            li {
-                width: 48%;
-                margin-left: 3%;
-                margin-bottom: 20px;
-            }
-            li:nth-of-type(1) {
-                margin-left: 0;
-            }
-            li:nth-of-type(3) {
-                margin-left: 0;
-            }
-        }
-        span.btn {
-            display: none;
-        }
-    }
-    .hj-picList {
-        ul {
-            li {
-                width: 30%;
-                margin-left: 4.5%;
-            }
-            li:nth-of-type(4) {
-                margin-left: 0;
-            }
-            li:nth-of-type(5) {
-                margin-left: 4.5%;
-            }
-            li:nth-of-type(7) {
-                margin-left: 0;
-            }
-        }
-        span.btn {
-            display: none;
-        }
-    }
-    .teacher-list {
-        ul {
-            width: 95%;
-            margin: 0 auto;
-            overflow: hidden;
-            li {
-                width: 48%;
-                margin-left: 4%;
-                .t-info{
-                    p{
-                        font-size: 14px;
-                    }
-                }
-            }
-            li:nth-of-type(1) {
-                margin-left: 0;
-            }
-            li:nth-of-type(3) {
-                margin-left: 0;
-            }
-        }
-        span.btn {
-            display: none;
-        }
-    }
-    .news {
-        ul {
-            width: 95%;
-            margin: 0 auto;
-            li {
-                width: 48%;
-                margin-left: 4%;
-            }
-            li:nth-of-type(1) {
-                margin: 0;
-            }
-            li:nth-of-type(3) {
-                margin: 0;
-            }
-        }
-    }
-    .ab-content{
-        span{
-            font-size: 16px;
         }
     }
 }
@@ -688,16 +593,12 @@
     .classInfo {
         ul {
             li {
-                width: 100%;
-                margin-left: 0;
+                width: 95%;
+                margin:0 auto;
                 margin-bottom: 20px;
+                float: none;
             }
-            li:nth-of-type(1) {
-                margin-left: 0;
-            }
-            li:nth-of-type(3) {
-                margin-left: 0;
-            }
+            
         }
         span.btn {
             display: none;
@@ -706,28 +607,18 @@
     .hj-picList {
         ul {
             li {
-                width: 45%;
-                margin-left: 5%;
+                width: 46.25%;
             }
-            li:nth-of-type(3) {
-                margin-left: 2%;
-            }
-            li:nth-of-type(5) {
-                margin-left: 2%;
-            }
-            li:nth-of-type(7) {
-                margin-left: 2%;
-            }
+            
         }
     }
     .teacher-list {
         ul {
-            width: 95%;
-            margin: 0 auto;
-            overflow: hidden;
             li {
-                width: 100%;
-                margin-left:0;
+                width: 95%;
+                margin: 0 auto;
+                margin-bottom:20px;
+                float: none;
             }
             
         }
