@@ -35,9 +35,11 @@ body {
 	margin: 0 2px;
 	margin-bottom: -8px;
 }
-.content .fx .icon:hover{
+
+.content .fx .icon:hover {
 	cursor: pointer;
 }
+
 .content .fx .time {
 	font-size: 14px;
 	float: right;
@@ -90,11 +92,27 @@ body {
 .content .page span {
 	font-size: 14px;
 }
-.content .page span:hover{
+
+.content .page span:hover {
 	cursor: pointer;
 }
+
 .content .page .next {
 	float: right;
+}
+
+@media only screen and (max-width: 400px) {
+	.content .page{
+		text-align: center;
+	}
+	.content .page span {
+		display: block;
+		margin: 0 auto;
+		margin: 6px;
+	}
+	.content .page .next {
+		float: none;
+	}
 }
 
 
@@ -110,6 +128,8 @@ body {
 	width: 650px;
 	height: 60px;
 	padding: 20px;
+	border-radius: 10px;
+	resize: none;
 }
 
 @media only screen and (max-width: 650px) {
@@ -134,9 +154,11 @@ body {
 	left: -2px;
 	z-index: 10;
 }
-.content .comment .login:hover{
+
+.content .comment .login:hover {
 	cursor: pointer;
 }
+
 .content .comment .other {
 	width: 100%;
 	margin-top: 10px;
@@ -149,9 +171,11 @@ body {
 	background-color: red;
 	margin-right: 20px;
 }
-.content .comment .other .icon:hover{
+
+.content .comment .other .icon:hover {
 	cursor: pointer;
 }
+
 .content .comment .other .subBtn {
 	display: block;
 	padding: 5px 10px;
@@ -159,9 +183,11 @@ body {
 	color: white;
 	float: right;
 }
-.content .comment .other .subBtn:hover{
+
+.content .comment .other .subBtn:hover {
 	cursor: pointer;
 }
+
 @media only screen and (max-width: 650px) {
 	.content .comment .other .subBtn {
 		display: block;
