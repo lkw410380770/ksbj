@@ -79,7 +79,8 @@ body {
 	background-color: #CCCCCC;
 	position: absolute;
 	top: -90px;
-	left: 16%;
+	left: 50%;
+	margin-left: -90px;
 }
 
 .exhibition .info h2 {
@@ -121,16 +122,6 @@ body {
 		margin-top: 160px;
 		position: relative;
 	}
-	.exhibition .info .headImg {
-		display: block;
-		width: 180px;
-		height: 180px;
-		border-radius: 180px;
-		background-color: #CCCCCC;
-		position: absolute;
-		top: -90px;
-		left: 16%;
-	}
 }
 @media only screen and (max-width: 900px) {
 	.exhibition .info {
@@ -142,16 +133,6 @@ body {
 		text-align: center;
 		margin-top: 160px;
 		position: relative;
-	}
-	.exhibition .info .headImg {
-		display: block;
-		width: 180px;
-		height: 180px;
-		border-radius: 180px;
-		background-color: #CCCCCC;
-		position: absolute;
-		top: -90px;
-		left: 26%;
 	}
 }
 @media only screen and (max-width: 716px) {
@@ -165,19 +146,7 @@ body {
 		margin-top: 160px;
 		position: relative;
 	}
-	.exhibition .info .headImg {
-		display: block;
-		width: 180px;
-		height: 180px;
-		border-radius: 180px;
-		background-color: #CCCCCC;
-		position: absolute;
-		top: -90px;
-		left: 36%;
-	}
 }
-
-
 /*加载更多按钮*/
 
 .content .bottom .moreBtn {
