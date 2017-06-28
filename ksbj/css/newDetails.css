@@ -1,0 +1,213 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.content {
+	width: 100%;
+	max-width: 690px;
+	margin: 0 auto;
+}
+
+
+/*新闻标题*/
+
+.content h2 {
+	padding: 60px 0px 30px 0px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.content .fx {
+	padding-bottom: 40px;
+}
+
+.content .fx label {
+	font-size: 12px;
+}
+
+.content .fx .icon {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background-color: green;
+	margin: 0 2px;
+	margin-bottom: -8px;
+}
+
+.content .fx .icon:hover {
+	cursor: pointer;
+}
+
+.content .fx .time {
+	font-size: 14px;
+	float: right;
+	margin-top: -10px;
+}
+
+@media only screen and (max-width: 650px) {
+	.content {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.content .fx .icon {
+		margin-top: 20px;
+	}
+	.content .fx .time {
+		display: block;
+		margin-top: 20px;
+		font-size: 14px;
+		float: none;
+	}
+}
+
+
+/*新闻文本*/
+
+.content .text {
+	padding: 40px 0px;
+}
+
+.content .text p {
+	font-size: 14px;
+	color: #666666;
+}
+
+.content .text .img {
+	width: 100%;
+	height: 390px;
+	margin: 40px 0px;
+	background-color: yellow;
+}
+
+
+/*切换新闻按钮*/
+
+.content .page {
+	width: 100%;
+	padding: 30px 0px;
+}
+
+.content .page span {
+	font-size: 14px;
+}
+
+.content .page span:hover {
+	cursor: pointer;
+}
+
+.content .page .next {
+	float: right;
+}
+
+@media only screen and (max-width: 400px) {
+	.content .page{
+		text-align: center;
+	}
+	.content .page span {
+		display: block;
+		margin: 0 auto;
+		margin: 6px;
+	}
+	.content .page .next {
+		float: none;
+	}
+}
+
+
+/*评论模块*/
+
+.content .comment {
+	width: 100%;
+	padding: 40px 0px;
+	position: relative;
+}
+
+.content .comment textarea {
+	width: 650px;
+	height: 60px;
+	padding: 20px;
+	border-radius: 10px;
+	resize: none;
+}
+
+@media only screen and (max-width: 650px) {
+	.content .comment textarea {
+		width: 80%;
+		height: 60px;
+		padding: 20px;
+	}
+}
+
+.content .comment .login {
+	width: 40px;
+	height: 40px;
+	background-color: white;
+	border-radius: 40px;
+	border: 1px solid #CCCCCC;
+	text-align: center;
+	line-height: 40px;
+	color: #CCCCCC;
+	position: absolute;
+	top: 10px;
+	left: -2px;
+	z-index: 10;
+}
+
+.content .comment .login:hover {
+	cursor: pointer;
+}
+
+.content .comment .other {
+	width: 100%;
+	margin-top: 10px;
+}
+
+.content .comment .other .icon {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background-color: red;
+	margin-right: 20px;
+}
+
+.content .comment .other .icon:hover {
+	cursor: pointer;
+}
+
+.content .comment .other .subBtn {
+	display: block;
+	padding: 5px 10px;
+	background-color: gray;
+	color: white;
+	float: right;
+}
+
+.content .comment .other .subBtn:hover {
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 650px) {
+	.content .comment .other .subBtn {
+		display: block;
+		padding: 5px 10px;
+		background-color: gray;
+		color: white;
+		text-align: center;
+		float: none;
+		margin-top: 20px;
+	}
+}
+
+
+/*已经评价过的内容*/
+
+.content .existence {
+	margin-top: 30px;
+	width: 100%;
+	height: 120px;
+	background-color: aqua;
+	margin-bottom: 60px;
+	text-align: center;
+}

@@ -1,0 +1,200 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.content {
+	width: 100%;
+}
+
+
+/*教师风采标题*/
+
+.content .top {
+	width: 100%;
+	height: 218px;
+	background-color: #999999;
+	text-align: center;
+}
+
+.content .top h4 {
+	color: white;
+	font-size: 20px;
+	padding: 60px 0px 30px 0px;
+}
+
+.content .top h2 {
+	color: white;
+	font-size: 32px;
+}
+
+
+/*教师展示部分*/
+
+.content .bottom {
+	padding: 60px 0px;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.content .bottom .text {
+	width: 70%;
+	margin: 0 auto;
+	font-size: 16px;
+	color: #666666;
+	text-align: center;
+	line-height: 32px;
+}
+
+
+/*教师个人信息展示*/
+
+.content .bottom .exhibition {
+	width: 100%;
+	text-align: center;
+	padding-top: 40px;
+}
+
+.exhibition .info {
+	display: inline-block;
+	width: 22%;
+	height: 360px;
+	margin: 0px 0.5%;
+	border: 1px solid #999999;
+	text-align: center;
+	margin-top: 160px;
+	position: relative;
+}
+.exhibition .info:hover{
+	cursor: pointer;
+	box-shadow: 0px 40px 60px 0px rgba(45, 44, 44, 0.2);
+}
+.exhibition .info .headImg {
+	display: block;
+	width: 180px;
+	height: 180px;
+	border-radius: 180px;
+	background-color: #CCCCCC;
+	position: absolute;
+	top: -90px;
+	left: 16%;
+}
+
+.exhibition .info h2 {
+	padding-top: 120px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.exhibition .info h4 {
+	padding: 16px 0px 20px 0px;
+	font-size: 14px;
+	color: #999999;
+}
+
+.exhibition .info span {
+	display: block;
+	width: 120px;
+	height: 1px;
+	background-color: red;
+	margin: 0 auto;
+}
+
+.exhibition .info p {
+	font-size: 16px;
+	color: #999999;
+	padding-top: 30px;
+	max-height: 120px;
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 1200px) {
+	.exhibition .info {
+		display: inline-block;
+		width: 30%;
+		height: 360px;
+		margin: 0px 0.5%;
+		border: 1px solid #999999;
+		text-align: center;
+		margin-top: 160px;
+		position: relative;
+	}
+	.exhibition .info .headImg {
+		left: 16%;
+	}
+}
+@media only screen and (max-width: 900px) {
+	.exhibition .info {
+		display: inline-block;
+		width: 46%;
+		height: 360px;
+		margin: 0px 0.5%;
+		border: 1px solid #999999;
+		text-align: center;
+		margin-top: 160px;
+		position: relative;
+	}
+	.exhibition .info .headImg {
+		display: block;
+		left: 26%;
+	}
+}
+@media only screen and (max-width: 716px) {
+	.exhibition .info {
+		display: inline-block;
+		width: 90%;
+		height: 360px;
+		margin: 0px 0.5%;
+		border: 1px solid #999999;
+		text-align: center;
+		margin-top: 160px;
+		position: relative;
+	}
+	.exhibition .info .headImg {
+		left: 36%;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.exhibition .info .headImg {
+		left: 32%;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.exhibition .info .headImg {
+		left: 28%;
+	}
+}
+@media only screen and (max-width: 430px) {
+	.exhibition .info .headImg {
+		left: 26%;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.exhibition .info .headImg {
+		left: 22%;
+	}
+}
+@media only screen and (max-width: 340px) {
+	.exhibition .info .headImg {
+		left: 18%;
+	}
+}
+/*加载更多按钮*/
+
+.content .bottom .moreBtn {
+	width: 160px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border: 1px solid #999999;
+	margin: 0 auto;
+	margin-top: 60px;
+	border-radius: 40px;
+	color: #999999;
+	margin-bottom: 60px;
+}
+.content .bottom .moreBtn:hover{
+	cursor: pointer;
+}

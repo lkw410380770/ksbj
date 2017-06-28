@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>图片蒙版</title>
+		<style type="text/css">
+			* {
+				padding: 0px;
+				margin: 0px;
+				border: 0px;
+			}
+			
+			.content {
+				width: 1200px;
+				margin: 0 auto;
+			}
+			
+			.container {
+				border: 1px solid #ddd;
+				background: #f7f7f7;
+				float: left;
+				position: relative;
+				overflow: hidden;
+			}
+			.container img{
+				display: block;
+			}
+			.mask {
+				width: 100%;
+				height: 100%;
+				background: #000;
+				position: absolute;
+				display: none;
+				opacity: 0.5;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="content">
+			<div class="container">
+				<img src="img/1.jpg" />
+				<div class="mask"></div>
+			</div>
+			<div class="container">
+				<img src="img/2.jpg" />
+				<div class="mask"></div>
+			</div>
+			<div class="container">
+				<img src="img/3.jpg" />
+				<div class="mask"></div>
+			</div>
+			<div class="container">
+				<img src="img/4.jpg" />
+				<div class="mask"></div>
+			</div>
+			<div class="container">
+				<img src="img/5.jpg" />
+				<div class="mask"></div>
+			</div>
+			<div class="container">
+				<img src="img/7.jpg" />
+				<div class="mask"></div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery1.42.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(".container").bind("mouseenter mouseleave", function(e) {
+			var w = $(this).width();
+			var h = $(this).height();
+			var x = (e.pageX - this.offsetLeft - (w / 2)) * (w > h ? (h / w) : 1);
+			var y = (e.pageY - this.offsetTop - (h / 2)) * (h > w ? (w / h) : 1);
+			//alert(x);
+			var direction = Math.round((((Math.atan2(y, x) * (180 / Math.PI)) + 180) / 90) + 3) % 4;
+			//direction的值为“0,1,2,3”分别对应着“上，右，下，左”
+			var eventType = e.type;
+			//alert(e.type);
+			if(e.type == 'mouseenter') {
+				if(direction == 0) {
+					$(this).find('.mask').css({
+						'display': 'block',
+						'top': -h + 'px',
+						'left': '0px'
+					}).animate({
+						'top': '0px'
+					});
+				} else if(direction == 1) {
+					$(this).find('.mask').css({
+						'display': 'block',
+						'left': w + 'px',
+						'top': '0px'
+					}).animate({
+						'left': '0px'
+					});
+				} else if(direction == 2) {
+					$(this).find('.mask').css({
+						'display': 'block',
+						'top': h + 'px',
+						'left': '0px'
+					}).animate({
+						'top': '0px'
+					});
+				} else if(direction == 3) {
+					$(this).find('.mask').css({
+						'display': 'block',
+						'left': -w + 'px',
+						'top': '0px'
+					}).animate({
+						'left': '0px'
+					});
+				}
+			} else {
+				if(direction == 0) {
+					$(this).find('.mask').animate({
+						'top': -h + 'px'
+					});
+				} else if(direction == 1) {
+					$(this).find('.mask').animate({
+						'left': w + 'px'
+					});
+				} else if(direction == 2) {
+					$(this).find('.mask').animate({
+						'top': h + 'px'
+					});
+				} else if(direction == 3) {
+					$(this).find('.mask').animate({
+						'left': -w + 'px'
+					});
+				}
+			}
+		});
+	</script>
+
+</html>
