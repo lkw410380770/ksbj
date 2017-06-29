@@ -112,6 +112,7 @@
          max-width: 1240px;
         margin: 0 auto;
         li {
+            transition:all .3s;
             float: left;
             width: 30%;
             border: 1px solid #666;
@@ -156,8 +157,8 @@
     display: flex;
     justify-content: center;
     margin: 20px auto;
-    ol {
-        li {
+  
+      span{
             width: 15px;
             height: 15px;
             border-radius: 50%;
@@ -166,10 +167,10 @@
             background: #999;
             cursor: pointer;
         }
-        li.active {
+        span.swiper-pagination-bullet-active {
             background-color: #41C7DB;
         }
-    }
+    
 }
 
 .lookAll {
@@ -380,6 +381,29 @@
     overflow: hidden;
     clear: both;
 }
+@media all and(max-width:1024px) {
+    .public-Title{
+        .ab-content{
+            .ab-pic{
+                width:70%;
+                margin:0 auto;
+                height:250px;
+                float: none;
+            }
+            span{
+                display: block;
+                width:70%;
+                margin:0 auto;
+                font-size: 14px;
+                margin-top:15px;
+            }
+            a{
+                float: none;
+                margin:20px auto;
+            }
+        }
+    }
+}
 @media all and(min-width:769px) and (max-width:968px) {
     .classInfo {
         ul {
@@ -588,7 +612,7 @@
     .news{
         ul{
             li{
-                width:46.25%;
+                width:95%;
             }
         }
     }

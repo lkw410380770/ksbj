@@ -4,31 +4,40 @@ $(function(){
 	var navListBox = $('.navListBox');
 	var liChil = navListBox.find('li');
 	var oneHeight = liChil.first().outerHeight(true);
+	var boot = true;
 	 mediaShow.click(function(){
 	 	var disEle = navListBox.css('display');
-	 	if(disEle == 'none'){
-	 		navListBox.css({
-	 			'display':'block',
-	 		}).animate({
-	 			'height':245
-	 		});
+	 		if(boot){
+	 			navListBox.css({
+	 					'height':liChil.length*oneHeight,
+	 					
+	 			});
+	 			boot = false;
+	 		}else{
+	 			navListBox.css({
+	 					'height':0,
+	 					
+	 			});
+	 			boot = true;
+	 		}
 
-	 	}else{
-	 		navListBox.animate({
-	 			'height':0
-	 		},function(){
-	 			navListBox.css('display','none');
-	 		})
-	 	}
 	 })
-	 window.onresize = function(){
-	 	var w = document.documentElement.clientWidth || document.body.clientWidth;
-	 	if(w<768){
-	 		navListBox.css('display','none');
-	 	}else if(w>768 && w<821){
-	 		navListBox.css('display','none');
-	 	}else{
-	 		navListBox.css('display','block');
-	 	}
-	 }
+
+	 $('.link-btn').on('click',function(){
+	 	var self = $(this);
+	 	var oUl = $('.ulList');
+	 	var t = new TimelineMax();
+	 	var w = oUl.outerWidth(true);
+	 	var h = oUl.outerHeight(true);
+	 	oUl.css({
+	 		'display':'block',
+	 		'margin-left':-w/2,
+	 		'margin-top':-h/2
+	 	});
+	 	t.set(oUl,{x:-25+'%'})
+	 	t.to(oUl,0.5,{
+	 		y:-50+'%',
+	 			
+	 	})
+	 })
 });
