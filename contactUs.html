@@ -43,7 +43,7 @@
 			</div>
 			<div class="bottom">
 				<!--地图-->
-				<div class="map">
+				<div class="map" id="allmap">
 				
 				</div>
 				<div class="text">
@@ -64,74 +64,69 @@
 		</div>
 		<!--內容部分结束-->
 		<!-- 底部 -->
-		<footer>
-			<div class="links">
-				<div class="link-info">
-					<span>友情链接：</span>
-					<ul>
-						<li>
-							<a href="">友情链接</a>
-						</li>
-						<li>
-							<a href="">友情链接</a>
-						</li>
-						<li>
-							<a href="">友情链接</a>
-						</li>
-						<li>
-							<a href="">友情链接</a>
-						</li>
-						<li>
-							<a href="">友情链接</a>
-						</li>
-						<li>
-							<a href="">友情链接</a>
-						</li>
-						<li>
-							<a href="">友情链接</a>
-						</li>
-						<li>
-							<a href="">友情链接</a>
-						</li>
-						<li>
-							<a href="">友情链接</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="nav-bottom">
-				 <img src="" alt="LOGO">
-				<ul>
-					<li>
-						<a href="aboutUs">关于我们</a>
-					</li>
-					<li>
-						<a href="class.html">班级介绍</a>
-					</li>
-					<li>
-						<a href="schoolShow.html">园所展示</a>
-					</li>
-					<li>
-						<a href="teachers.html">教师风采</a>
-					</li>
-					<li>
-						<a href="news.html">最新动态</a>
-					</li>
-					<li>
-						<a href="contactUs.html">联系我们</a>
-					</li>
-				</ul>
-			</div>
-			<div class="banquan">
-				<b>Copyright  2003-2017 inspinovation  ICP备8888888号</b>
-				<ul>
+		  <!-- 底部 -->
+    <footer>
+        <div class="links">
+            <div class="line"></div>
+            <div class="link-info">
+                <span class="inft-s">友情链接：</span>
+                <ul>
+                    <li><a href="">友情链接</a></li>
+                    <li><a href="">友情链接</a></li>
+                    <li><a href="">友情链接</a></li>
+                    <li><a href="">友情链接</a></li>
+                    <li><a href="">友情链接</a></li>
+                    <li><a href="">友情链接</a></li>
+                    <li><a href="">友情链接</a></li>
+                    <li><a href="">友情链接</a></li>
+                    <li><a href="">友情链接</a></li>
+                    <span>^</span>
+                </ul>
+            </div>
+
+        </div>
+        <div class="nav-bottom">
+            <img src="" alt="LOGO">
+            <ul>
+                <li><a href="aboutUs.html">关于我们</a></li>
+                <li><a href="class.html">班级介绍</a></li>
+                <li><a href="schoolShow.html">园所展示</a></li>
+                <li><a href="teachers.html">教师风采</a></li>
+                <li><a href="news.html">最新动态</a></li>
+                <li><a href="contactUs.html">联系我们</a></li>
+            </ul>
+
+        </div>
+        <div class="banquan">
+            <b>Copyright © 2003-2017 inspinovation  ICP备8888888号</b>
+            <ul>
                 <li><a>图标</a></li>
                 <li><a>图标</a></li>
                 <li><a>图标</a></li>
             </ul>
-			</div>
-		</footer>
-		<!-- end -->
+        </div>
+    </footer>
 	</body>
+
+		<script type="text/javascript">
+	//百度地图API功能
+		function loadJScript() {
+			var script = document.createElement("script");
+			script.type = "text/javascript";
+			script.src = "http://api.map.baidu.com/api?v=2.0&ak=Nj6F7YxqAEUhrXEsujW3fKM482MRQbc7&callback=init";
+			document.body.appendChild(script);
+		}
+		function init() {
+			var map = new BMap.Map("allmap");            // 创建Map实例
+			var point = new BMap.Point(106.697331, 26.575015); // 创建点坐标
+			map.centerAndZoom(point,15);                 
+			map.enableScrollWheelZoom();
+			var marker = new BMap.Marker(point);  // 创建标注
+			map.addOverlay(marker);               // 将标注添加到地图中
+			marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画                 //启用滚轮放大缩小
+		}  
+	window.onload = loadJScript;  //异步加载地图
+</script>
+
 
 </html>

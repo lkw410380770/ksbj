@@ -182,23 +182,39 @@ body {
 }
 
 .head {
-    img {
-        float: left;
-        padding: 20px 20px;
-    }
+    height:83px;
+    line-height: 83px;
     width:100%;
-    height: 80px;
-    ul {
-        float: right;
+    box-shadow: 0 4px 5px 5px rgba(0,0,0,.2);
+    .n-list{
+        img {
+        float: left;
+        vertical-align: middle;
+        margin-top:14px;
+        }
+        max-width: 1180px;
+        margin:0 auto;
+        width:100%;
+        ul {
+            float: right;
         li {
             float: left;
-            line-height: 80px;
-            padding: 0 25px;
             font-size: 14px;
+            padding:;
             a {
-                color: #000;
+               
+                border-radius: 25px;
+                color: #333;
+                padding:9px 30px;
             }
+            a.active{
+            background-color:#2097ea;
+            color:#fff;
         }
+
+        }
+        
+    }
     }
 }
 
@@ -220,7 +236,7 @@ footer {
             margin: 0 auto;
             overflow: hidden;
             height: 100%;
-            border: 1px solid #ccc;
+           
             line-height: 35px;
             position: relative;
             z-index: 9999;
