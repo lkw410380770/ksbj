@@ -2,6 +2,28 @@
 .banner {
     position: relative;
     overflow: hidden;
+    .page-icon {
+            width: 116px;
+            height: 12px;
+            position: absolute;
+            bottom: 17%;
+            left: 50%;
+            margin-left: -58px;
+            overflow: hidden;
+            z-index: 9999;
+            span {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    margin-left: 20px;
+                    background-color: #fff;
+                    float: left;
+                    opacity:1;
+                }
+            span.swiper-pagination-bullet-active {
+                    background-color: #2097ea;
+            }
+        }
     .banner-bg {
         position: absolute;
         bottom: 0;
@@ -14,36 +36,15 @@
         }
     }
     .warp {
-        max-height: 1080px;
-        overflow: hidden;
-        position: relative;
-        width: 100%;
+        // max-height: 1080px;
+        // overflow: hidden;
+        // position: relative;
+        // width: 100%;
         img {
             display: block;
             width: 100%;
             height: auto;
-        }
-        .page-icon {
-            width: 116px;
-            height: 12px;
-            position: absolute;
-            bottom: 180px;
-            left: 50%;
-            margin-left: -58px;
-            overflow: hidden;
-            ol {
-                li {
-                    width: 12px;
-                    height: 12px;
-                    border-radius: 50%;
-                    margin-left: 20px;
-                    background-color: #fff;
-                    float: left;
-                }
-                li.change {
-                    background-color: #2097ea;
-                }
-            }
+            float: left;
         }
     }
     width: 100%;
@@ -641,30 +642,50 @@
     overflow: hidden;
     clear: both;
 }
-
-@media all and(max-width:1024px) {
+@media all and(max-width:1090px) {
     .public-Title {
+        margin-top:55px;
         .ab-content {
+            margin-top: 55px;
             .ab-pic {
-                width: 70%;
-                margin: 0 auto;
-                height: 250px;
-                float: none;
+                width: 50%;
+            }
+            h3{
+                line-height: 50px;
             }
             span {
-                display: block;
-                width: 70%;
-                margin: 0 auto;
                 font-size: 14px;
-                margin-top: 15px;
+                margin-top: 10px;
             }
             a {
-                float: none;
-                margin: 20px auto;
+               margin-top:5%;
             }
         }
     }
 }
+// @media all and(max-width:1024px) {
+//     .public-Title {
+//         .ab-content {
+//             margin-top: 55px;
+//             .ab-pic {
+//                 width: 50%;
+//                 margin: 0 auto;
+//                 float: none;
+//             }
+//             span {
+//                 display: block;
+//                 width: 70%;
+//                 margin: 0 auto;
+//                 font-size: 14px;
+//                 margin-top: 15px;
+//             }
+//             a {
+//                 float: none;
+//                 margin: 20px auto;
+//             }
+//         }
+//     }
+// }
 
 @media all and(min-width:769px) and (max-width:968px) {
     .classInfo {
