@@ -6,24 +6,17 @@ $(function() {
         navLi.removeClass('active');
         $(this).addClass('active');
     });
+    var navBottom = $('.nav-bottom>ul>li>a');
+    navBottom.mouseover(function() {
+        navBottom.removeClass('active');
+        $(this).addClass('active');
+    });
 
     /**
-     * [classLi_list description] 班级介绍 鼠标移入与滑屏
-     * @type {[type]}
+     * [mySwiper description] 班级介绍动画
+     * @type {Swiper}
      */
-    var classLi_list = $('.classInfo').find('li');
-    classLi_list.on('mouseover', function() {
-        $(this).css({
-            'box-shadow': '4px 2px 15px 5px rgba(0,0,0,.1)'
-        })
-    });
-    classLi_list.on('mouseleave', function() {
-        $(this).css({
-            'box-shadow': 'none'
-        })
-    });
-
-    var mySwiper = new Swiper('.classInfo', {
+    var mySwiper = new Swiper('.classBox', {
         autoplay: 5000, //可选选项，自动滑动
         pagination: '.iconList',
         paginationClickable: true,
@@ -32,6 +25,19 @@ $(function() {
         prevButton: '.prev',
         nextButton: '.next',
     });
+    var mySwiper2 = new Swiper('.techBox', {
+        autoplay: 5000, //可选选项，自动滑动
+        pagination: '.iconList',
+        paginationClickable: true,
+        loop: true,
+        autoplayDisableOnInteraction: false,
+        prevButton: '.prev',
+        nextButton: '.next',
+    });
+    /**
+     * [mySwiper1 description] bannerd动画
+     * @type {Swiper}
+     */
     var mySwiper1 = new Swiper('.banner', {
         autoplay: 3500, //可选选项，自动滑动
         loop: true,
@@ -43,5 +49,25 @@ $(function() {
           // loopAdditionalSlides : 1,
 
     });
+
+
+    var oHj_picList = $('.hj-picList>ul>li');
+    oHj_picList.on('mouseover',function(){
+    	$(this).find('div.maker').css({
+    				'transform':'translate(0,0) rotate(0)',
+    	});
+    	$(this).find('div.lookdetail').css({
+    				'transform':'translate(0,0) rotate(0)',
+    	});
+    })
+     oHj_picList.on('mouseleave',function(){
+    
+    	$(this).find('div.maker').css({
+    				'transform':'translate(-100%,0) rotate(-360deg)',
+    	});
+    	$(this).find('div.lookdetail').css({
+    				'transform':'translate(-100%,0) rotate(-360deg)',
+    	});
+    })
    
 });

@@ -182,127 +182,123 @@ body {
 }
 
 .head {
-    height:83px;
+    height: 83px;
     line-height: 83px;
-    width:100%;
-    box-shadow: 0 4px 5px 5px rgba(0,0,0,.2);
-    .n-list{
-        img {
-        float: left;
-        vertical-align: middle;
-        margin-top:14px;
+    width: 100%;
+    box-shadow: 0 4px 5px 5px rgba(0, 0, 0, .2);
+    .n-list {
+        height:100%;
+        .hideBtn{
+            width:50px;
+            height:50px;
+            background-color: red;
+            float: right;
+            display: none;
+        }
+        .logo {
+            width: 20%;
+            max-width: 226px;
+            float: left;
+            vertical-align: middle;
+            margin-top: 14px;
+            background:url('../img/logo.png') no-repeat center center;
+            background-size: contain;
+            height:60%;
+            img {
+                width: 100%;
+                display: block;
+                height: auto;
+            }
         }
         max-width: 1180px;
         margin:0 auto;
         width:100%;
         ul {
             float: right;
-        li {
-            float: left;
-            font-size: 14px;
-            padding:;
-            a {
-               
-                border-radius: 25px;
-                color: #333;
-                padding:9px 30px;
+            li {
+                float: left;
+                font-size: 14px;
+                a {
+                    border-radius: 25px;
+                    color: #333;
+                    padding: 9px 30px;
+                }
+                a.active {
+                    background-color: #2097ea;
+                    color: #fff;
+                }
             }
-            a.active{
-            background-color:#2097ea;
-            color:#fff;
         }
-
-        }
-        
-    }
     }
 }
 
 footer {
+    background: url('../img/foot-bg_03.jpg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
     .links {
         width: 100%;
         position: relative;
-        .line {
-            width: 100%;
-            height: 1px;
-            background-color: #ccc;
-            position: absolute;
-            bottom: 15px;
-            z-index: 8888;
-        }
-        .link-info {
-            background-color: #fff;
-            width: 85%;
-            margin: 0 auto;
-            overflow: hidden;
-            height: 100%;
-           
-            line-height: 35px;
-            position: relative;
-            z-index: 9999;
-            span.inft-s {
+        max-width: 1180px;
+        height: 42px;
+        border-radius: 25px;
+        background-color: rgba(0, 0, 0, .4);
+        line-height: 42px;
+        margin: 0 auto;
+        ul {
+            li {
+                padding: 0 3%;
                 float: left;
-                padding: 0 10px;
-                display: block;
-                width: 80px;
-                height: 30px;
-                position: absolute;
-                left: 10px;
-                top: 50%;
-                margin-top: -15px;
-                line-height: 30px;
-            }
-            span.link-btn{
-                    display: none;
-                }
-            ul {
-                width: 85%;
-                float: right;
-                height:59px;
-                li {
-                    float: left;
-                    padding: 0 2%;
-                    line-height: 59px;
-                    a {
-                        color: #999;
-                    }
-                }
-                span {
-                    display: none;
+                font-size: 14px;
+                a {
+                    color: #fff;
                 }
             }
         }
     }
     .nav-bottom {
-        margin: 20px auto;
+        margin: 25px auto;
         overflow: hidden;
-        img {
+        width: 100%;
+        max-width: 1180px;
+        line-height: 94px;
+        .img {
             float: left;
-            margin: 20px 60px;
+            margin: 20px 0px;
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
         }
         ul {
             float: right;
-            margin-top: 20px;
-            margin-right: 15px;
-        }
-        li {
-            float: left;
-            padding: 0 40px;
-            a {
-                color: #000;
+            li {
+                float: left;
+                font-size: 14px;
+                a {
+                    border-radius: 25px;
+                    color: #333;
+                    padding: 9px 30px;
+                    color: #fff;
+                }
+                a.active {
+                    background-color: #2097ea;
+                    color: #fff;
+                }
             }
         }
     }
     .banquan {
         width: 100%;
-        height: 52px;
-        background: #999;
         overflow: hidden;
-        line-height: 52px;
+        line-height: 60px;
+        max-width: 1180px;
+        margin: 0 auto;
         b {
             font-weight: normal;
-            margin-left: 30px;
             color: #fff;
+            font-size: 12px;
         }
         ul {
             float: right;
@@ -312,31 +308,49 @@ footer {
                 cursor: pointer;
                 a {
                     color: #fff;
-                }
-            }
-        }
-    }
-}
-@media all and(max-width:1260px) {
-    footer {
-        .links {
-            .link-info {
-                ul {
-                    height:auto;
-                    li {
-                       
-                        line-height: 30px;
+                    i {
+                        font-size: 22px;
                     }
                 }
             }
         }
     }
 }
-@media all and(max-width:1175px) {
-    .nav-bottom {
-        ul {
-            li {
-                padding: 0 25px;
+
+@media all and(max-width:1220px) {
+    .head {
+        .n-list {
+            .logo {
+                margin-left: 2%;
+                box-sizing: border-box;
+            }
+            ul {
+                li {
+                    a {
+                        padding: 9px 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and(max-width:968px) {
+.head {
+        .n-list {
+            .hideBtn{
+                display: block;
+            }
+            .logo {
+                margin-left: 2%;
+                box-sizing: border-box;
+            }
+            ul {
+              
+                li {
+                    a {
+                        padding: 9px 20px;
+                    }
+                }
             }
         }
     }
@@ -354,8 +368,8 @@ footer {
         }
     }
 }
+
 @media all and(max-width:877px) {
-    
     footer {
         .links {
             .link-info {
@@ -373,14 +387,14 @@ footer {
 @media all and (max-width:821px) {
     .head {
         ul {
-            transition:all 0.5s;
+            transition: all 0.5s;
             width: 100%;
             background-color: #ccc;
             padding: 0;
             height: 0;
             position: absolute;
-            top:80px;
-            left:0;
+            top: 80px;
+            left: 0;
             overflow: hidden;
             li {
                 width: 100%;
@@ -407,7 +421,6 @@ footer {
         .links {
             .link-info {
                 span.inft-s {}
-
                 ul {
                     width: 75%;
                     li {
@@ -422,12 +435,11 @@ footer {
                 margin-right: 0;
             }
             ul {
-                width:70%;
-               li{
-                line-height: 30px;
-                padding: 0 10px;
-               }
-                
+                width: 70%;
+                li {
+                    line-height: 30px;
+                    padding: 0 10px;
+                }
             }
         }
         .banquan {
@@ -447,54 +459,55 @@ footer {
         }
     }
 }
+
 @media all and(max-width:650px) {
     footer {
         .nav-bottom {
             ul {
-                width:70%;
-               li{
+                width: 70%;
+                li {
                     font-size: 14px;
-               }
-                
+                }
             }
         }
     }
 }
+
 @media all and(max-width:640px) {
     footer {
         .links {
             .link-info {
-                width:40%;
+                width: 40%;
                 max-height: 59px;
-                    height: 59px;
-                    overflow:visible;
+                height: 59px;
+                overflow: visible;
                 span.inft-s {}
-                span.link-btn{
+                span.link-btn {
                     display: block;
-                    width:80px;
-                    height:30px;
+                    width: 80px;
+                    height: 30px;
                     background: #f60;
                     text-align: center;
-                    color:#fff;
+                    color: #fff;
                     line-height: 30px;
                     position: absolute;
-                    right:20px;
-                    top:50%;
-                    margin-top:-15px;
+                    right: 20px;
+                    top: 50%;
+                    margin-top: -15px;
                     cursor: pointer;
                     border-radius: 10px;
                 }
                 ul {
                     background: #fff;
-                    box-shadow: 0 0 10px 5px rgba(0,0,0,.3);
+                    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .3);
                     display: none;
                     width: 75%;
                     overflow: hidden;
                     position: absolute;
-                    left:50%;
-                    top:50%;
+                    left: 50%;
+                    top: 50%;
                     z-index: 9999;
-                    width:140%;
+                    width: 140%;
                     li {
                         font-size: 14px;
                         padding: 0 3%;
@@ -504,6 +517,7 @@ footer {
         }
     }
 }
+
 @media all and (min-width:481px) and (max-width:570px) {
     footer {
         .nav-bottom {
@@ -518,6 +532,7 @@ footer {
         }
     }
 }
+
 @media all and(max-width:520px) {
     footer {
         .links {
@@ -525,14 +540,15 @@ footer {
                 span.inft-s {
                     display: none;
                 }
-                span.link-btn{
-                   margin-left: -40px;
-                   left:50%;
+                span.link-btn {
+                    margin-left: -40px;
+                    left: 50%;
                 }
             }
         }
     }
 }
+
 @media all and(max-width:480px) {
     footer {
         .nav-bottom {
