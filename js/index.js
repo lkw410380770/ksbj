@@ -11,7 +11,38 @@ $(function() {
         navBottom.removeClass('active');
         $(this).addClass('active');
     });
+    var mediaShow = $('.hideBtn');
+    var mask = $('.mask');
+    var hideNav = $('.hidenav');
+    var aLi = hideNav.find('a');
+    aLi.mouseover(function() {
+        aLi.removeClass('active');
+        $(this).addClass('active');
 
+    });
+    mediaShow.on('click',function(){
+          mask.css({
+              'display':'block',
+              'opacity':1
+          });
+      hideNav.css('display','block');
+       hideNav.animate({
+            'right':0
+       },0.2)
+    });
+    mask.on('click',function(){
+       mask.animate({
+        'opacity':0
+       },1,function(){
+        $(this).css('display','none');
+       });
+     
+       hideNav.animate({
+            'right':'-30%'
+       },1,function(){
+         $(this).css('display','none');
+       })
+    })
     /**
      * [mySwiper description] 班级介绍动画
      * @type {Swiper}
@@ -50,10 +81,7 @@ $(function() {
 
     });
 
-    /**
-     * [oHj_picList description] 教学环境
-     * @type {[type]}
-     */
+
     var oHj_picList = $('.hj-picList>ul>li');
     oHj_picList.on('mouseover',function(){
     	$(this).find('div.maker').css({
