@@ -50,7 +50,10 @@ $(function() {
 
     });
 
-
+    /**
+     * [oHj_picList description] 教学环境
+     * @type {[type]}
+     */
     var oHj_picList = $('.hj-picList>ul>li');
     oHj_picList.on('mouseover',function(){
     	$(this).find('div.maker').css({
