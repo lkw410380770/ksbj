@@ -184,7 +184,6 @@ body {
 
 .head .n-list {
     height: 100%;
-    overflow: hidden;
     max-width: 1180px;
     margin: 0 auto;
     width: 100%
@@ -216,8 +215,7 @@ body {
     background-size: contain;
     height: 60%;
     mix-height: 50px;
-    min-width: 142px;
-    margin-left: 4%
+    min-width: 142px
 }
 
 .head .n-list .logo img {
@@ -226,66 +224,26 @@ body {
     height: auto
 }
 
-.head .n-list ul.navListBox {
-    width: 70%;
+.head .n-list ul {
     float: right;
-    transition: all .5s
+    -webkit-transition:all 0.5s;
+    transition:all 0.5s;
 }
 
-.head .n-list ul.navListBox li {
-    margin-left: 3%;
+.head .n-list ul li {
     float: left;
-    font-size: 14px;
-    text-align: center;
-    overflow: hidden
+    font-size: 14px
 }
 
-.head .n-list ul.navListBox li a {
+.head .n-list ul li a {
     border-radius: 25px;
     color: #333;
-    padding: 9px 15px;
-    overflow: hidden
+    padding: 9px 30px
 }
 
-.head .n-list ul.navListBox li a.active {
+.head .n-list ul li a.active {
     background-color: #2097ea;
     color: #fff
-}
-
-.head .hidenav {
-    width: 30%;
-    background-color: #fff;
-    position: fixed;
-    right: -30%;
-    z-index: 10000;
-    box-shadow: -5px 0 5px 5px rgba(0, 0, 0, .3);
-    height: 100%;
-    top: 0;
-    display: none;
-    transition: all .5s
-}
-
-.head .hidenav ul li {
-    width: 100%;
-    line-height: 50px;
-    float: none
-}
-
-.head .hidenav ul li a {
-    display: block;
-    width: 100%;
-    border-radius: 0;
-    text-align: center;
-    padding: 0
-}
-
-.head .hidenav ul li a.active {
-    background-color: #2097ea;
-    color: #fff
-}
-
-.head .hidenav ul li:nth-of-type(1) {
-    margin-top: 50px
 }
 
 footer {
