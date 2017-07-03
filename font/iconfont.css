@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1498891481918'); /* IE9*/
-  src: url('iconfont.eot?t=1498891481918#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1498891481918') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1498891481918') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1498891481918#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1499065144323'); /* IE9*/
+  src: url('iconfont.eot?t=1499065144323#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1499065144323') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1499065144323') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1499065144323#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -24,6 +24,8 @@
 .icon-zuoyoujiantou-copy-copy-copy:before { content: "\e64b"; }
 
 .icon-weixin:before { content: "\e601"; }
+
+.icon--huojiandaodan:before { content: "\e664"; }
 
 .icon-qq:before { content: "\e602"; }
 

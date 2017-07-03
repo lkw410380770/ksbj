@@ -1,5 +1,12 @@
 $(function() {
 
+    // 返回顶部
+    var oGoTop = $('.goTop');
+    oGoTop.on('click',function(ev){
+          ev.preventDefault();
+          $("html,body").animate({scrollTop:0}, 500);
+    })
+
     // 导航
     var navLi = $('.n-list>ul>li>a');
     navLi.mouseover(function() {
@@ -16,11 +23,12 @@ $(function() {
     var mask = $('.mask');
     hideBtn.on('click',function(){
         mask.fadeIn();
-        oHideUl.css('right',"0");
+        // oHideUl.css('right',"0");
+       oHideUl.addClass('addTrans');
     });
     mask.on('click',function(){
       mask.fadeOut();
-        oHideUl.css('right',"-30%");
+      oHideUl.removeClass('addTrans')
     })
     /**
      * [mySwiper description] 班级介绍动画
@@ -30,7 +38,6 @@ $(function() {
         pagination: '.iconList',
         paginationClickable: true,
         loop: true,
-        autoplayDisableOnInteraction: false,
         prevButton: '.prev',
         nextButton: '.next',
     });
@@ -39,7 +46,7 @@ $(function() {
         pagination: '.iconList',
         paginationClickable: true,
         loop: true,
-        autoplayDisableOnInteraction: false,
+        
         prevButton: '.prev',
         nextButton: '.next',
     });
@@ -51,10 +58,10 @@ $(function() {
         autoplay: 3500, //可选选项，自动滑动
         loop: true,
          pagination: '.page-icon',
+         paginationClickable :true,
          autoplayDisableOnInteraction : false,
           autoHeight: true, //高度随内容变化
           initialSlide: 1,
-          observer:true,
           // loopAdditionalSlides : 1,
 
     });
