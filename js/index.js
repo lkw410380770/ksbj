@@ -11,44 +11,22 @@ $(function() {
         navBottom.removeClass('active');
         $(this).addClass('active');
     });
-    var mediaShow = $('.hideBtn');
+     var hideBtn = $('.hideBtn');
+    var oHideUl = $('.navListBox');
     var mask = $('.mask');
-    var hideNav = $('.hidenav');
-    var aLi = hideNav.find('a');
-    aLi.mouseover(function() {
-        aLi.removeClass('active');
-        $(this).addClass('active');
-
-    });
-    mediaShow.on('click',function(){
-          mask.css({
-              'display':'block',
-              'opacity':1
-          });
-      hideNav.css('display','block');
-       hideNav.animate({
-            'right':0
-       },0.2)
+    hideBtn.on('click',function(){
+        mask.fadeIn();
+        oHideUl.css('right',"0");
     });
     mask.on('click',function(){
-       mask.animate({
-        'opacity':0
-       },1,function(){
-        $(this).css('display','none');
-       });
-     
-       hideNav.animate({
-            'right':'-30%'
-       },1,function(){
-         $(this).css('display','none');
-       })
+      mask.fadeOut();
+        oHideUl.css('right',"-30%");
     })
     /**
      * [mySwiper description] 班级介绍动画
      * @type {Swiper}
      */
     var mySwiper = new Swiper('.classBox', {
-        autoplay: 5000, //可选选项，自动滑动
         pagination: '.iconList',
         paginationClickable: true,
         loop: true,
@@ -57,7 +35,7 @@ $(function() {
         nextButton: '.next',
     });
     var mySwiper2 = new Swiper('.techBox', {
-        autoplay: 5000, //可选选项，自动滑动
+       
         pagination: '.iconList',
         paginationClickable: true,
         loop: true,

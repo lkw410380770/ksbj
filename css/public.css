@@ -436,10 +436,11 @@ footer .banquan ul li a i {
         box-sizing: border-box
     }
     .head .n-list ul {
-        display: block
+        display: block;
+        width:100%;
     }
     .head .n-list ul li a {
-        padding: 9px 20px
+        padding: 9px 20px;
     }
 }
 @media all and (max-width:969px) {
