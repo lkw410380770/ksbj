@@ -442,17 +442,12 @@ footer .banquan ul li a i {
         padding: 9px 20px
     }
 }
-@media all and (max-width:768px) {
-    .head {
-        height: 60px
-    }
-    .head .n-list .hideBtn {
-        margin-top: 15px;
-        height: 40px;
-        width: 40px;
-        margin-top: 10px
+@media all and (max-width:969px) {
+    .head .n-list ul {
+        width: auto
     }
 }
+
 @media all and (max-width:968px) {
     .head .n-list .hideBtn {
         display: block;
@@ -490,5 +485,17 @@ footer .banquan ul li a i {
     }
     .head .n-list ul li:nth-of-type(1) {
         margin-top: 50px
+    }
+}
+
+@media all and (max-width:768px) {
+    .head {
+        height: 60px
+    }
+    .head .n-list .hideBtn {
+        margin-top: 15px;
+        height: 40px;
+        width: 40px;
+        margin-top: 10px
     }
 }
