@@ -473,21 +473,27 @@ footer .banquan ul li a i {
 /*///////////////////////////////////////////*/
 // 头部
 @media all and (max-width:1100px) {
-    .head .n-list .logo {
-        margin-left: 3%;
-        box-sizing: border-box
-    }
-    .head .n-list ul.navListBox {
-        transition: all .5s;
-        display: block;
-        width: 60%
-    }
-    .head .n-list ul.navListBox li {
-        margin-left: 1%
-    }
-    .head .n-list ul.navListBox li a {
-        padding: 9px 12px
-    }
+	body{
+		background-color: #000;
+	}
+	// .head .n-list{
+	// 	border:1px solid #000;
+	// }
+ //    .head .n-list .logo {
+ //        margin-left: 3%;
+ //        box-sizing: border-box
+ //    }
+ //    .head .n-list ul.navListBox {
+ //        transition: all .5s;
+ //        display: block;
+ //        width: 60%
+ //    }
+ //    .head .n-list ul.navListBox li {
+ //        margin-left: 2%
+ //    }
+ //    .head .n-list ul.navListBox li a {
+ //        padding: 9px 12px
+ //    }
 }
 
 @media all and (max-width:972px) {
