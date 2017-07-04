@@ -35,20 +35,21 @@ $(function() {
      * @type {Swiper}
      */
     var mySwiper = new Swiper('.classBox', {
-        pagination: '.iconList',
+        pagination: '.iconOne',
+        nextButton: '.class-next',
+        prevButton: '.class-prev',
         paginationClickable: true,
         loop: true,
-        prevButton: '.prev',
-        nextButton: '.next',
+    
     });
     var mySwiper2 = new Swiper('.techBox', {
        
-        pagination: '.iconList',
+        pagination: '.iconTwo',
+        prevButton: '.prev',
+        nextButton: '.next',
         paginationClickable: true,
         loop: true,
         
-        prevButton: '.prev',
-        nextButton: '.next',
     });
     /**
      * [mySwiper1 description] bannerd动画

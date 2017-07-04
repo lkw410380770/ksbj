@@ -164,23 +164,25 @@ a {
 body {
     font-family: "微软雅黑"
 }
-.goTop{
+
+.goTop {
     position: fixed;
-    width:40px;
-    height:40px;
-    right:15px;
-    bottom:15px;
+    width: 40px;
+    height: 40px;
+    right: 15px;
+    bottom: 15px;
     color: #ea2e51;
     cursor: pointer;
     text-align: center;
     line-height: 40px;
-    border:1px solid #ea2e51;
+    border: 1px solid #ea2e51;
     border-radius: 50%;
     z-index: 9999;
-    i{
-         font-size: 35px;
+    i {
+        font-size: 35px;
     }
 }
+
 // 遮罩
 .mask {
     width: 100%;
@@ -245,8 +247,8 @@ body {
     float: right;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-    transform:translate(0px,0px);
-    -webkit-transform:translate(0px,0px);
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
 }
 
 .head .n-list ul li {
@@ -356,15 +358,19 @@ footer .banquan ul li {
     padding: 0 20px;
     cursor: pointer
 }
-footer .banquan ul li:nth-of-type(1):hover a i{
-    color:#469df7;
+
+footer .banquan ul li:nth-of-type(1):hover a i {
+    color: #469df7;
 }
-footer .banquan ul li:nth-of-type(2):hover a i{
-    color:#df323e;
+
+footer .banquan ul li:nth-of-type(2):hover a i {
+    color: #df323e;
 }
-footer .banquan ul li:nth-of-type(3):hover a i{
-    color:#64d55f;
+
+footer .banquan ul li:nth-of-type(3):hover a i {
+    color: #64d55f;
 }
+
 footer .banquan ul li a {
     color: #fff
 }
@@ -375,12 +381,13 @@ footer .banquan ul li a i {
 
 
 /*页脚响应式样式*/
-@media only screen and (max-width:1200px){
-    footer .links{
-        width:95% !important;
 
+@media only screen and (max-width:1200px) {
+    footer .links {
+        width: 95% !important;
     }
 }
+
 @media only screen and (max-width: 1050px) {
     footer .nav-bottom {
         margin: 25px auto;
@@ -473,6 +480,7 @@ footer .banquan ul li a i {
         padding: 9px 20px;
     }
 }
+
 @media only screen and (max-width: 1050px) {
     // .head .n-list .logo {
     //     margin-left: 2%;
@@ -485,15 +493,28 @@ footer .banquan ul li a i {
         padding: 9px 15px;
     }
 }
+
 @media all and (max-width:969px) {
     .head .n-list ul {
         width: auto
     }
 }
+
 @media all and (max-width:968px) {
+    .banner {
+        margin-top: 60px;
+    }
+    .head {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 999999999;
+        background-color: #fff;
+        height: 60px;
+        line-height: 60px;
+    }
     .head .n-list .hideBtn {
         display: block;
-        margin-top: 15px;
         cursor: pointer;
         background-color: #fff;
         margin-right: 2%
@@ -504,20 +525,20 @@ footer .banquan ul li a i {
     }
     .head .n-list ul {
         width: 30%;
-        background-color: rgba(255,255,255,.7);
+        background-color: rgba(255, 255, 255, .7);
         position: fixed;
         right: -30%;
         z-index: 10000;
         // box-shadow: -5px 0 5px 5px rgba(0, 0, 0, .3);
-        transform:translate(0,0);
+        transform: translate(0, 0);
         height: 100%;
         top: 0
     }
-    .head .n-list ul.addTrans{
-        transform:translate(-100%,0);
+    .head .n-list ul.addTrans {
+        transform: translate(-100%, 0);
     }
-    .head .n-list ul.removeTrans{
-        transform:translate(100%,0);
+    .head .n-list ul.removeTrans {
+        transform: translate(100%, 0);
     }
     .head .n-list ul li {
         width: 100%;
