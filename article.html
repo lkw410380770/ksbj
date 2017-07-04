@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>班级详情</title>
+    <link rel="stylesheet" href="css/iconfont.css">
 	<link rel="stylesheet" href="css/public.css">
 	 <link rel="stylesheet" href="css/article.css">
      <script src="js/jquery-3.2.1.min.js"></script>
@@ -11,17 +12,41 @@
 <body>
 	<!-- 导航 -->
     <nav class="head">
-     <div class="mediaShow"></div>
-        <img src="" alt="logo">
-        <ul class="navListBox">
-           <li><a href="index.html">首页</a></li>
-            <li><a href="aboutUs.html">关于我们</a></li>
-            <li><a href="class.html">班级介绍</a></li>
-            <li><a href="schoolShow.html">园所展示</a></li>
-            <li><a href="teachers.html">教师风采</a></li>
-            <li><a href="news.html">最新动态</a></li>
-            <li><a href="contactUs.html">联系我们</a></li>
-        </ul>
+        <div class="mediaShow"></div>
+        <div class="n-list">
+            <div class="logo">
+                <!-- <img src="img/logo.png" alt="logo"> --></div>
+            <div class="hideBtn">
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>
+            <ul class="navListBox">
+                <li>
+                    <a class="active" href="index.html">首页</a>
+                </li>
+                <li>
+                    <a href="aboutUs.html">关于我们</a>
+                </li>
+                <li>
+                    <a href="class.html">班级介绍</a>
+                </li>
+                <li>
+                    <a href="schoolShow.html">园所展示</a>
+                </li>
+                <li>
+                    <a href="teachers.html">教师风采</a>
+                </li>
+                <li>
+                    <a href="news.html">最新动态</a>
+                </li>
+                <li>
+                    <a href="contactUs.html">联系我们</a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <!-- end -->
 	
@@ -30,22 +55,46 @@
 		<div class="topNav">
 			<ul>
 				<li><a href="#">首页</a></li>
+                <i>/</i>
 				<li><a href="#">班级介绍</a></li>
-				<li><a href="#">小兔班</a></li>
+                <i>/</i>
+				<li><a class="active" href="#">小兔班</a></li>
 			</ul>
 		</div>
 		<!-- 左边内容模块 -->
 		<div class="left">
-			<div class="img">图片</div>
-			<h3>小兔班<span>康世贝佳幼儿园</span></h3>
-			<h5>寓意</h5>
-			<p>兔的文化象征意义: 机智，谨慎等。兔子是一种非常温驯的动物，任何人只要看到它，都会情不自禁地过去摸摸它，它的乖巧玲珑人见人爱。“兔”在中国是一个美好的字眼。它既是人的生肖之一，也与人类的生命、人们的美好的希望密切相连。而在生活中，小兔子可爱、有趣的形象也深得小朋友的喜爱。</p>
-			<div class="img">图片</div>
-			<h5>班级介绍</h5>
-			<p>23个快乐的孩子，怀着对梦的执着；对美好童年的渴望；对未来无限的憧憬；踏进了康世贝佳幼儿园小兔班。这是一个温馨和谐的大家庭，一个充满爱的乐园。一个有爱的群体，一个充满活力的群体，它不会因为矛盾而分散，不会因为压力而沉寂，不会因为失败而丧气，不会因为竞争而冷漠。我们，是一个整体，我们，是不可分割的一织血脉。纵然有过哭泣，纵然有过挫折，但一切的不愉快都随风飘逝，所有的不好都随波消散。友好，和睦，亲密无间，成为了永恒的旋律。心灵与心灵相交融，友爱和友爱相重叠，平平淡淡的生活中，所涂抹出来的，是一幅没有灰色，没有黑色，没有夜的暗，没有冬之寒的油画。 </p>
-			<h5>教师格言</h5>
-			<p>给孩子一个多姿多彩的童年，让他们在一页页翻飞的书页间起飞，在湛蓝如洗的天空下，无忧无虑地飘飞。</p>
-			<div class="line"></div>
+			<div class="img"><img src="img/article-bg.jpg" alt=""></div>
+			<h3><b>小兔班</b><span>CASA：3岁以上班级</span></h3>
+            <!-- 分享 -->
+            <div class="share">
+                <span>发布时间：2017.03.02</span>
+               <div class="bdsharebuttonbox"><span style="line-height: 28px;margin-right:5px;">分享:</span><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+            </div>
+            <!--分享 end -->
+            <!-- 文章内容 -->
+			<div class="content">
+                <h5>寓意</h5>
+            <p>兔的文化象征意义: 机智，谨慎等。兔子是一种非常温驯的动物，任何人只要看到它，都会情不自禁地过去摸摸它，它的乖巧玲珑人见人爱。“兔”在中国是一个美好的字眼。它既是人的生肖之一，也与人类的生命、人们的美好的希望密切相连。而在生活中，小兔子可爱、有趣的形象也深得小朋友的喜爱。</p>
+            <div class="img"><img src="img/article2.jpg" alt=""></div>
+            <h5>班级介绍</h5>
+            <p>23个快乐的孩子，怀着对梦的执着；对美好童年的渴望；对未来无限的憧憬；踏进了康世贝佳幼儿园小兔班。这是一个温馨和谐的大家庭，一个充满爱的乐园。一个有爱的群体，一个充满活力的群体，它不会因为矛盾而分散，不会因为压力而沉寂，不会因为失败而丧气，不会因为竞争而冷漠。我们，是一个整体，我们，是不可分割的一织血脉。纵然有过哭泣，纵然有过挫折，但一切的不愉快都随风飘逝，所有的不好都随波消散。友好，和睦，亲密无间，成为了永恒的旋律。心灵与心灵相交融，友爱和友爱相重叠，平平淡淡的生活中，所涂抹出来的，是一幅没有灰色，没有黑色，没有夜的暗，没有冬之寒的油画。 </p>
+            <h5>教师格言</h5>
+            <p>给孩子一个多姿多彩的童年，让他们在一页页翻飞的书页间起飞，在湛蓝如洗的天空下，无忧无虑地飘飞。</p>         
+            </div>
+            <!-- 文章内容 end-->
+
+
+            <div class="nextPage">
+                <a class="prev" href="javascript:;">
+                    上一篇 :
+                    <span>没有了</span>
+                </a>
+                <a class="next" href="javascript:;">
+                    下一篇 :
+                    <span>小兔班</span>
+                </a>
+            </div>
 		</div>
 		<!-- 左边 end -->
 
@@ -53,74 +102,125 @@
 		<div class="right">
 			<h3>其他班级</h3>
 			<ul>
+                <a href="javascript:;">
 				<li>
-					<div class="pic">图片</div>
-					<span>小熊班</span>
+					<div class="pic"><img src="img/class6.jpg" alt=""></div>
+                    <h4>小熊班</h4>
+					<p>5月12日，由伊顿国际教育集团承办的“幼教之春”...</p>
 				</li>
+                </a>
+                <a href="javascript:;">
                 <li>
-                    <div class="pic">图片</div>
-                    <span>小熊班</span>
+                    <div class="pic"><img src="img/class1.jpg" alt=""></div>
+                   <h4>小熊班</h4>
+                    <p>5月12日，由伊顿国际教育集团承办的“幼教之春”...</p>
                 </li>
+                </a>
+                <a href="javascript:;">
                 <li>
-                    <div class="pic">图片</div>
-                    <span>小熊班</span>
+                    <div class="pic"><img src="img/class3.jpg" alt=""></div>
+                    <h4>小熊班</h4>
+                    <p>5月12日，由伊顿国际教育集团承办的“幼教之春”...</p>
                 </li>
+                 </a>
+                 <a href="javascript:;">
                 <li>
-                    <div class="pic">图片</div>
-                    <span>小熊班</span>
+                    <div class="pic"><img src="img/class5.jpg" alt=""></div>
+                    <h4>小熊班</h4>
+                    <p>5月12日，由伊顿国际教育集团承办的“幼教之春”...</p>
                 </li>
+                </a>
+                <a href="javascript:;">
                 <li>
-                    <div class="pic">图片</div>
-                    <span>小熊班</span>
+                    <div class="pic"><img src="img/class4.jpg" alt=""></div>
+                    <h4>小熊班</h4>
+                    <p>5月12日，由伊顿国际教育集团承办的“幼教之春”...</p>
                 </li>
+                </a>
 			</ul>
 		</div>
 		<!-- 右边 end-->
 	</section>
 
 	<!-- 详情end -->
-
-    <!-- 底部 -->
+    <div class="clear"></div>
+   <!-- 底部 -->
     <footer>
-        <div class="links">
-            <div class="line"></div>
-            <div class="link-info">
-                <span class="inft-s">友情链接：</span>
-                <ul>
-                    <li><a href="">友情链接</a></li>
-                    <li><a href="">友情链接</a></li>
-                    <li><a href="">友情链接</a></li>
-                    <li><a href="">友情链接</a></li>
-                    <li><a href="">友情链接</a></li>
-                    <li><a href="">友情链接</a></li>
-                    <li><a href="">友情链接</a></li>
-                    <li><a href="">友情链接</a></li>
-                    <li><a href="">友情链接</a></li>
-                    <span>^</span>
-                </ul>
-            </div>
-
-        </div>
         <div class="nav-bottom">
-            <img src="" alt="LOGO">
+            <div class="img">
+                <img src="img/foot-logo.png" alt="LOGO">
+            </div>
             <ul>
-                <li><a href="aboutUs.html">关于我们</a></li>
-                <li><a href="class.html">班级介绍</a></li>
-                <li><a href="schoolShow.html">园所展示</a></li>
-                <li><a href="teachers.html">教师风采</a></li>
-                <li><a href="news.html">最新动态</a></li>
-                <li><a href="contactUs.html">联系我们</a></li>
+                <li>
+                    <a class="active" href="aboutUs.html">关于我们</a>
+                </li>
+                <li>
+                    <a href="class.html">班级介绍</a>
+                </li>
+                <li>
+                    <a href="schoolShow.html">园所展示</a>
+                </li>
+                <li>
+                    <a href="teachers.html">教师风采</a>
+                </li>
+                <li>
+                    <a href="news.html">最新动态</a>
+                </li>
+                <li>
+                    <a href="contactUs.html">联系我们</a>
+                </li>
             </ul>
-
+        </div>
+        <div class="links">
+            <ul class="ulList">
+                <li>
+                    <a href="">友情链接</a>
+                </li>
+                <li>
+                    <a href="">友情链接</a>
+                </li>
+                <li>
+                    <a href="">友情链接</a>
+                </li>
+                <li>
+                    <a href="">友情链接</a>
+                </li>
+                <li>
+                    <a href="">友情链接</a>
+                </li>
+                <li>
+                    <a href="">友情链接</a>
+                </li>
+                <li>
+                    <a href="">友情链接</a>
+                </li>
+                <li>
+                    <a href="">友情链接</a>
+                </li>
+                <li>
+                    <a href="">友情链接</a>
+                </li>
+            </ul>
         </div>
         <div class="banquan">
-            <b>Copyright © 2003-2017 inspinovation  ICP备8888888号</b>
             <ul>
-                <li><a>图标</a></li>
-                <li><a>图标</a></li>
-                <li><a>图标</a></li>
+                <li>
+                    <a><i class="iconfont icon-qq"></i></a>
+                </li>
+                <li>
+                    <a><i class="iconfont icon-weibo"></i></a>
+                </li>
+                <li>
+                    <a><i class="iconfont icon-weixin"></i></a>
+                </li>
             </ul>
+            <b>Copyright © 2003-2017 inspinovation  ICP备8888888号</b>
         </div>
     </footer>
+    <!-- end -->
+    <!-- 返回顶部 -->
+    <div class="goTop"><i class="iconfont icon--huojiandaodan"></i></div>
+    <!-- 遮罩 -->
+    <div class="mask"></div>
 </body>
 </html>

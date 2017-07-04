@@ -1,10 +1,71 @@
 .topImg {
-    height: 370px;
     width: 100%;
     text-align: center;
-    line-height: 370px;
     font-size: 60px;
-    background-color: #999;
+    background: url('../img/topbg.jpg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.public-Title {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.public-Title h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: #333;
+    line-height: 0;
+    margin-top: 105px;
+    height: auto;
+    color: #fff;
+    font-size: 40px;
+}
+
+.public-Title p.title-p {
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+    width: 70%;
+    margin: 0 auto;
+    color: #666;
+    margin-bottom: 140px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.public-Title .write {
+    color: #fff
+}
+
+.public-Title .public-middle {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 45px;
+}
+
+.public-Title .public-middle span {
+    display: inline-block;
+    width: 118px;
+    height: 1px;
+    background-color: #fff;
+    margin-bottom: 4px;
+}
+
+.public-Title .public-middle b {
+    font-weight: 400;
+    line-height: 35px;
+    padding: 0 10px;
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+}
+
+.public-Title .public-middle .write {
+    color: #fff
 }
 
 // 主题内容样式
@@ -28,6 +89,23 @@
     }
 }
 
+.lookAll {
+    display: block;
+    width: 160px;
+    height: 42px;
+    border-radius: 25px;
+    border: 1px solid #2097ea;
+    text-align: center;
+    line-height: 42px;
+    font-size: 14px;
+    color: #2097ea;
+    margin: 30px auto;
+    position: relative;
+    z-index: 9999;
+    transition: all .5s;
+    transform: translate(0, 0)
+}
+
 .classInfo {
     width: 100%;
     margin-top: 30px;
@@ -35,45 +113,74 @@
     margin: 30px auto;
     overflow: hidden;
     ul {
+        overflow: hidden;
         li {
             float: left;
             width: 30%;
-            border: 1px solid #666;
+            border: 1px solid #e7e7e7;
             margin-left: 2.5%;
             padding-bottom: 10px;
             margin-bottom: 50px;
+            overflow: hidden;
             img {
-                width: 100%;
-                height: 243px;
-                border-bottom: 1px;
+                display:block;
+                width:100%;
+                height:auto;
+                tansition:all 0.5s;
             }
             h4 {
                 line-height: 50px;
-                font-size: 20px;
+                font-size: 18px;
+                color: #ffae21;
                 text-indent: 10px;
             }
             p {
-                font-size: 16px;
+                font-size: 14px;
                 color: #666;
                 padding: 0 10px;
+                display: -webkit-box;
+                line-height: 25px;
+                max-height: 50px;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
             }
         }
-        
+        li:hover{
+            box-shadow: 4px 2px 15px 5px rgba(0, 0, 0, .1);
+            img{
+                transition:all 0.5s;
+                transform:scale(1.1);
+            }
+        }
+    }
+    a:hover {
+        background-image: -moz-linear-gradient(0deg, #2097ea 0, #1471d0 100%);
+        background-image: -webkit-linear-gradient(0deg, #2097ea 0, #1471d0 100%);
+        background-image: -ms-linear-gradient(0deg, #2097ea 0, #1471d0 100%);
+        box-shadow: 0 10px 20px 0 rgba(4, 95, 185, .8);
+        color: #fff;
+        transform: translate(0, -5px)
     }
 }
+
 @media all and(max-width:540px) {
-   .intro-nav {
-    ul {
-        margin-top:30px;
-        li {
-            width: 100%;
-            float: none;
-            line-height: 30px;
+    .intro-nav {
+        ul {
+            margin-top: 30px;
+            li {
+                width: 100%;
+                float: none;
+                line-height: 30px;
+            }
         }
     }
 }
-}
+
 @media all and(max-width:968px) {
+    .topImg{
+        margin-top:60px;
+    }
     .classInfo {
         ul {
             li {
@@ -82,17 +189,32 @@
         }
     }
 }
+
 @media all and(max-width:680px) {
     .classInfo {
         ul {
             li {
-                width:95%;
-                margin:0 auto;
+                width: 85%;
+                margin: 0 auto;
                 float: none;
-                margin-bottom:20px;
+                margin-bottom: 20px;
             }
         }
     }
 }
-
-
+@media all and(max-width:420px) {
+    .classInfo {
+        ul {
+            li {
+                width: 95%;
+            }
+        }
+    }
+    .public-Title .public-middle span {
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    background-color: #fff;
+    margin-bottom: 4px;
+}
+}
