@@ -1,6 +1,8 @@
 $(function() {
 
-   
+   $('.lasChild').on('click',function(){
+        $(this).parents('div.links').css('display','none');
+   })
     
     /**
      * [mySwiper description] 班级介绍动画

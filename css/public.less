@@ -284,13 +284,17 @@ footer .links {
     max-width: 1180px;
     height: 42px;
     border-radius: 25px;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, .1);
     line-height: 42px;
-    margin: 0 auto
+    margin: 0 auto;
+    transition:all 1s;
+    -webkit-transition:all 1s;
 }
-
+footer .links ul{
+    position:relative;
+}
 footer .links ul li {
-    padding: 0 3%;
+    padding: 0 2.9%;
     float: left;
     font-size: 14px
 }
@@ -298,19 +302,34 @@ footer .links ul li {
 footer .links ul li a {
     color: #fff
 }
-
+footer .links ul li:last-child{
+    width:30px;
+    height:30px;
+    border:1px solid #fff;
+    border-radius:50%;
+    position:absolute;
+    right:10px;
+    top:5px;
+    padding: 0;
+    text-align:center;
+    line-height:30px;
+    cursor: pointer;
+    i{
+        color:#fff;
+    }
+}
 footer .nav-bottom {
     margin: 25px auto;
     overflow: hidden;
     width: 100%;
     max-width: 1180px;
     text-align: center;
+    margin-top:40px;
 }
 
 footer .nav-bottom .img {
     float: left;
     margin: 20px 0;
-    margin-left: 4%;
 }
 
 footer .nav-bottom .img img {
@@ -333,6 +352,10 @@ footer .nav-bottom ul li a {
     color: #333;
     padding: 9px 30px;
     color: #fff
+}
+footer .nav-bottom ul li a.active{
+    background-color:#2097ea;
+    color:#fff;
 }
 
 footer .nav-bottom ul li a:hover {
@@ -388,11 +411,20 @@ footer .banquan ul li a i {
 /*页脚响应式样式*/
 
 @media only screen and (max-width:1200px) {
+    footer .nav-bottom{
+        margin-left:2.5%;
+    }
     footer .links {
         width: 95% !important;
     }
 }
+@media only screen and (max-width: 1100px) {
+    footer .links ul li:last-child{
+        bottom:10px !important;
+        top:auto;
 
+    }
+}
 @media only screen and (max-width: 1050px) {
     footer .nav-bottom {
         margin: 25px auto;
@@ -561,7 +593,126 @@ footer .banquan ul li a i {
         margin-top: 60px
     }
 }
+// 内容页公共部分
+.common-icon-nav{
+    width:40px;
+    height:200px;
+    position:fixed;
+    right:15px;
+    top:30%;
+    ul{
+        position:relative;
+        li{
+            width:40px;
+            height:40px;
+            border-radius:5px;
+            position:relative;
+            z-index:9999;
+            text-align:center;
+            line-height:40px;
+            color:#fff;
+            margin-bottom:5px;
+            transition:all 0.5s;
+            -webkit-transition:all 0.5s;
+            div{
+                width:160px;
+                position:absolute;
+                background-color:red;
+                right:65px;
+                padding: 10px;
+                background-color:#fff;
+                box-shadow:0px 3px 10px 5px rgba(0,0,0,.1);
+                border-radius:5px;
+                z-index:997;
+                transition:all 0.5s;
+                -webkit-transition:all 0.5s;
+                transform:translate(-50px,0);
+                opacity:0;
+                display:none;
+                span{
+                    position:absolute;
+                    right:-10px; 
+                }
+                h4{
+                    color:#666666;
+                    font-size:12px;
+                    margin-top:10px;
+                    text-align:left;
+                    text-indent: 17px;
+                    line-height:15px;
 
+                    i{
+                       color:#ffae21; 
+                    }
+                }
+                p{
+                    color:#ffae21;
+                    line-height:20px;
+                    margin-top:5px;
+                }
+            }
+        }
+        li:nth-of-type(1){
+            transition:all 0.5s;
+            -webkit-transition:all 0.5s;
+            transform:translate(0,155px);
+            -webkit-transform:translate(0,155px);
+            background-color:#ffae21;
+            div{
+                top:-20px;
+                span{
+                    top:15px;
+                }
+            }
+        }
+        li:nth-of-type(2){
+            transition:all 0.5s;
+            -webkit-transition:all 0.5s;
+            transform:translate(0,110px);
+            -webkit-transform:translate(0,110px);
+            background-color:#3cb1f0;
+            div{
+               top:0px;
+                span{
+                    top:0;
+                } 
+            }
+        }
+        li:nth-of-type(3){
+            transition:all 0.5s;
+            -webkit-transition:all 0.5s;
+            transform:translate(0,65px);
+            -webkit-transform:translate(0,65px);
+            background-color:#4dc74c;
+            margin-bottom:25px;
+            div{
+               top:0px;
+                span{
+                    top:0px;
+                } 
+            }
+        }
+        li:nth-of-type(4){
+            background-color:#ff5c56;
+            cursor: pointer;
+            display:block;
+             transition:all 0.5s;
+            -webkit-transition:all 0.5s;
+            transform:translate(0,0);
+            -webkit-transform:translate(0,0);
+            i{
+                transform:rotateY(180deg);
+                -webkit-transform:rotateY(180deg);
+            }
+        }
+        li:hover div{
+            transition:all 0.5s;
+            transform:translate(0,0);
+            opacity:1;
+            // display:block;
+        }
+    }
+}
 @media all and (max-width:768px) {
     .head {
         height: 60px

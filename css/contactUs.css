@@ -26,14 +26,14 @@ body {
 	background: url(../img/teacher_fg1.png) center no-repeat;
 	position: absolute;
 	left: 0;
-	bottom: -100px;
+	bottom: -182px;
 }
 
 .content .top h4 {
 	color: white;
 	font-size: 12px;
 	font-weight: normal;
-	margin-top: 10px;
+	margin-top: 8px;
 }
 
 .content .top h4 span {
@@ -56,7 +56,13 @@ body {
 	color: white;
 	font-size: 40px;
 	font-weight: normal;
-	padding-top: 90px;
+	padding-top: 180px;
+}
+
+.content .top p {
+	color: white;
+	font-size: 16px;
+	margin-top: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -72,13 +78,17 @@ body {
 	.content .top h2 {
 		font-size: 30px;
 	}
+	.content .top p {
+		width: 80%;
+		margin: 0 auto;
+	}
 }
 
 
 /*联系我们内容部分*/
 
 .content .bottom {
-	padding: 30px 0px 120px 0px;
+	padding: 80px 0px 100px 0px;
 	width: 90%;
 	max-width: 800px;
 	margin: 0 auto;
@@ -109,9 +119,11 @@ body {
 	border: 1px solid gainsboro;
 	border-radius: 6px;
 }
-.content .inputs div input:focus{
+
+.content .inputs div input:focus {
 	border-color: #2097ea;
 }
+
 .content .inputs .name {
 	display: inline-block;
 	width: 49%;
@@ -141,9 +153,11 @@ body {
 	border: 1px solid gainsboro;
 	border-radius: 6px;
 }
-.content .inputs textarea:focus{
+
+.content .inputs textarea:focus {
 	border-color: #2097ea;
 }
+
 @media only screen and (max-width: 560px) {
 	.content .inputs div {
 		display: block;
@@ -198,6 +212,7 @@ body {
 	background: linear-gradient(to right, #2097ea, #1471d0);
 	margin-bottom: 20px;
 	line-height: 90px;
+	border-radius: 6px;
 }
 
 .content .bottom .text .mode img {
@@ -234,19 +249,20 @@ body {
 	.content .bottom .text .mode {
 		margin: 0 auto;
 		margin-bottom: 30px;
-		text-align: left;
+		padding-top: 20px;
+		height: auto;
+		text-align: center;
 	}
 }
 
 @media only screen and (max-width: 380px) {
 	.content .bottom .text .mode {
 		width: 90%;
-		padding-bottom: 20px;
 	}
 	.content .bottom .text .mode img {
 		display: block;
 		margin-bottom: -12px;
-		margin-left: 20px;
+		margin: 0 auto;
 	}
 	.content .bottom .text .mode label {
 		display: inline-block;
@@ -261,17 +277,29 @@ body {
 
 .content .map {
 	width: 100%;
-	height: 270px;
+	height: 304px;
 	overflow: hidden;
 	margin-bottom: -20px;
 }
+
 @media only screen and (max-width: 1220px) {
 	.content .map {
-	
-	margin-bottom: -40px;
+		margin-bottom: -40px;
+	}
 }
-}
+
 footer {
 	position: relative;
 	z-index: 10;
+}
+
+
+/*去掉地图标识*/
+
+.BMap_cpyCtrl {
+	display: none;
+}
+
+.anchorBL {
+	display: none;
 }

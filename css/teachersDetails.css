@@ -17,6 +17,7 @@ body {
 	background: url(../img/teacher_top.jpg) center no-repeat;
 	text-align: center;
 	position: relative;
+	overflow: hidden;
 }
 
 .content .top .fgImg {
@@ -25,14 +26,14 @@ body {
 	background: url(../img/teacher_fg1.png) center no-repeat;
 	position: absolute;
 	left: 0;
-	bottom: -100px;
+	bottom: -182px;
 }
 
 .content .top h4 {
 	color: white;
 	font-size: 12px;
 	font-weight: normal;
-	margin-top: 10px;
+	margin-top: 8px;
 }
 
 .content .top h4 span {
@@ -55,13 +56,32 @@ body {
 	color: white;
 	font-size: 40px;
 	font-weight: normal;
-	padding-top: 90px;
+	padding-top: 180px;
 }
 
 .content .top p {
 	color: white;
 	font-size: 16px;
-	margin-top: 20px;
+	margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+	.content .top h4 span {
+		width: 80px;
+	}
+	.content .top h4 span:nth-child(1) {
+		margin-right: 20px;
+	}
+	.content .top h4 span:nth-child(2) {
+		margin-left: 20px;
+	}
+	.content .top h2 {
+		font-size: 30px;
+	}
+	.content .top p {
+		width: 80%;
+		margin: 0 auto;
+	}
 }
 
 @media only screen and (max-width: 600px) {
@@ -89,7 +109,7 @@ body {
 .content .bottom {
 	padding: 0px 0px 60px 0px;
 	width: 100%;
-	max-width: 780px;
+	max-width: 784px;
 	margin: 0 auto;
 	position: relative;
 	padding-bottom: 160px;
@@ -111,6 +131,7 @@ body {
 .bottom .bottomNav span {
 	display: inline-block;
 	font-size: 20px;
+	margin: 0px 2px;
 }
 
 .bottom hr {
@@ -137,27 +158,30 @@ body {
 .bottom .details .introduceImg {
 	display: inline-block;
 	width: 47%;
+	max-width: 395px;
 	border: 1px solid gainsboro;
-	max-height: 640px !important;
+	height: 517px !important;
 	overflow: hidden;
 }
 
 .bottom .details .introduceImg img {
 	display: block;
 	width: 100%;
-	background-size: 100% 100%;
+	height: 100%;
 }
 
 .bottom .details .introduceText {
 	display: inline-block;
-	width: 48%;
+	width: 47%;
 	float: right;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) {
 	.bottom .details .introduceImg {
 		display: block;
 		width: 80%;
+		height: auto;
+		background-size: 100% 100%;
 		border: 1px solid gainsboro;
 		max-height: 640px !important;
 		overflow: hidden;
@@ -169,7 +193,6 @@ body {
 		float: none;
 		clear: both;
 		margin: 0 auto;
-		margin-top: 30px;
 	}
 }
 
@@ -177,7 +200,7 @@ body {
 	width: 100%;
 	font-size: 18px;
 	color: #2097ea;
-	padding: 10px 0px 20px;
+	padding: 0px 0px 20px;
 	position: relative;
 }
 
@@ -197,21 +220,30 @@ body {
 }
 
 .bottom .details .introduceText h2 a:nth-child(2) {
-	margin: 0px 8px;
+	margin: 0px 30px;
 }
 
 .bottom .details .introduceText h4 {
-	font-size: 18px;
+	font-size: 12px;
 	padding-bottom: 16px;
 	color: #666666;
 	font-weight: normal;
 }
 
 .bottom .details .introduceText p {
-	font-size: 18px;
+	font-size: 14px;
 	line-height: 32px;
+	max-height: 502px;
+	overflow: auto;
 	color: #666666;
 	font-weight: normal;
+}
+
+@media only screen and (max-width: 1200px) {
+	.bottom .details .introduceText p {
+		max-height: none;
+		overflow: hidden;
+	}
 }
 
 
@@ -257,7 +289,7 @@ body {
 		height: 40px;
 		position: absolute;
 		background-size: 10%;
-		top: 94%;
+		top: 40%;
 	}
 	.swiper-button-prev {
 		left: 10%;
@@ -267,28 +299,29 @@ body {
 	}
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
 	.swiper-button-prev,
 	.swiper-button-next {
-		top: 88%;
+		top: 90%;
 	}
 }
 
 @media only screen and (max-width: 500px) {
 	.swiper-button-prev,
 	.swiper-button-next {
-		top: 80%;
+		top: 92%;
 	}
 }
 
 @media only screen and (max-width: 450px) {
 	.swiper-button-prev,
 	.swiper-button-next {
-		top: 86%;
+		top: 94%;
 	}
 }
+
 @media only screen and (max-width: 600px) {
-	footer{
-		margin-top: -60px;
+	footer {
+		/*margin-top: -60px;*/
 	}
 }

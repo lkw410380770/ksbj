@@ -6,8 +6,10 @@ body {
 
 .content {
 	width: 100%;
-	max-width: 690px;
+	max-width: 784px;
 	margin: 0 auto;
+	margin-top: 144px;
+	padding-bottom: 60px;
 }
 
 

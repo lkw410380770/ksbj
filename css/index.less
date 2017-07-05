@@ -54,7 +54,7 @@
     float: left
 }
 .margin100{
-    margin-top:100px !important;
+    margin-top:140px !important;
 }
 .public-Title {
     width: 100%;
@@ -65,7 +65,8 @@
 .public-Title h3 {
     text-align: center;
     font-size: 40px;
-    color: #333
+    color: #333;
+    font-weight:normal;
 }
 
 .public-Title p.title-p {
@@ -128,15 +129,25 @@
 
 .ab-content .ab-pic {
     width: 49%;
-    float: left
+    float: left;
+    overflow:hidden;
 }
 
 .ab-content .ab-pic img {
     display: block;
     width: 100%;
-    height: auto
+    height: auto;
+    transition:all 0.5s;
+    -webkit-transition:all 0.5s;
 }
-
+.ab-content .ab-pic:hover{
+    img{
+        transition:all 0.5s;
+        -webkit-transition:all 0.5s;
+        transform:scale(1.1);
+        -webkit-transform:scale(1.1);
+    }
+}
 .ab-content h3 {
     color: #ffae21;
     font-size: 24px;
@@ -294,12 +305,12 @@
 }
 
 .classInfo {
-    margin-top: 30px;
     width: 100%;
     max-width: 1300px;
     margin: 30px auto;
     overflow: hidden;
-    position: relative
+    position: relative;
+    margin-top:74px;
 }
 
 .classInfo ul {
@@ -320,11 +331,17 @@
 .classInfo .swiper-wrapper .swiper-slide{
     width:100%;
 }
-.classInfo ul li img {
-    height: auto;
+.classInfo ul li .pic{
+    width:100%;
+    overflow:hidden;
+    img{
+        height: auto;
     width: 100%;
     display: block;
-    max-height: 280px
+    max-height: 280px;
+    -webkit-transition:all 0.5s;
+    transition:all 0.5s;
+    }
 }
 
 .classInfo ul li h4 {
@@ -350,7 +367,15 @@
 }
 
 .classInfo ul li:hover {
-    box-shadow: 4px 2px 15px 5px rgba(0, 0, 0, .1)
+    box-shadow: 4px 2px 15px 5px rgba(0, 0, 0, .1);
+    .pic{
+        img{
+            -webkit-transition:all 0.5s;
+            transition:all 0.5s;
+            transform:scale(1.1);
+            -webkit-transform:scale(1.1);
+        }
+    }
 }
 
 .classInfo span.btn {
@@ -469,7 +494,7 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 39px;
     margin-bottom: 32px;
     overflow: hidden;
     position: relative
@@ -655,10 +680,10 @@
     font-size: 14px;
     color: #8c8c8c;
     padding: 20px;
-    height: 84px;
     overflow: hidden;
     background-color: #f8f8f8;
-    margin-top: 10px
+    margin-top: 10px;
+    line-height:25px;
 }
 
 .teacher-list ul li .t-info span.line {
@@ -749,11 +774,13 @@
 .news {
     width: 100%;
     max-width: 1200px;
-    margin: 50px auto;
+    margin: 60px auto;
     overflow: hidden;
     text-align: center;
 }
-
+.newsDongtai{
+    margin-bottom:73px;
+}
 .news ul li {
     width: 30%;
     display: inline-block;
@@ -806,7 +833,9 @@
 .news-two {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto
+    margin: 0 auto;
+    margin-bottom:10px;
+    overflow:hidden;
 }
 
 .news-two ul {
@@ -867,7 +896,8 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    padding:0 10px;
 }
 
 .news-two ul li span {

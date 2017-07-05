@@ -3,7 +3,9 @@
 
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 		<title>联系我们</title>
+		<link rel="stylesheet" href="font/iconfont.css">
 		<link rel="stylesheet" type="text/css" href="css/public.css" />
 		<link rel="stylesheet" type="text/css" href="css/contactUs.css" />
 	</head>
@@ -23,7 +25,7 @@
 				</div>
 				<ul class="navListBox">
 					<li>
-						<a class="active" href="index.html">首页</a>
+						<a href="index.html">首页</a>
 					</li>
 					<li>
 						<a href="aboutUs.html">关于我们</a>
@@ -41,7 +43,7 @@
 						<a href="news.html">最新动态</a>
 					</li>
 					<li>
-						<a href="contactUs.html">联系我们</a>
+						<a class="active" href="contactUs.html">联系我们</a>
 					</li>
 				</ul>
 			</div>
@@ -78,17 +80,17 @@
 				</form>
 				<div class="text">
 					<div class="mode">
-						<img src="img/c_map.png"/><label>南京市江宁区托乐嘉小区将军大道9号</label>
+						<img src="img/c_map.png" /><label>南京市江宁区托乐嘉小区将军大道9号</label>
 					</div>
 					<div class="mode">
-						<img src="img/c_phone.png"/><label>全国客服电话 <br />025-86111813</label>
+						<img src="img/c_phone.png" /><label>全国客服电话 <br />025-86111813</label>
 					</div>
-					
+
 				</div>
 			</div>
 			<div class="map" id="allmap">
 
-				</div>
+			</div>
 		</div>
 		<!--內容部分结束-->
 		<!-- 底部 -->
@@ -148,6 +150,9 @@
 					<li>
 						<a href="">友情链接</a>
 					</li>
+					<li class="lasChild">
+                    <i class="iconfont icon-guandiaotongzhi"></i>
+                </li>
 				</ul>
 			</div>
 			<div class="banquan">
@@ -165,8 +170,39 @@
 				<b>Copyright © 2003-2017 inspinovation  ICP备8888888号</b>
 			</div>
 		</footer>
+		<div class="common-icon-nav">
+        <ul>
+            <li>
+                <i class="iconfont icon-dianhua"></i>
+                <div class="out">
+                    <span class="iconfont icon-triangle-right"></span>
+                    <h4><i class="iconfont icon-dianhua1"></i>全国客服热线</h4>
+                    <p>025-86111813</p>
+                </div>
+            </li>
+            <li>
+                <i class="iconfont icon-qq"></i>
+                <div class="out">
+                    <span class="iconfont icon-triangle-right"></span>
+                    <p>025-86111813</p>
+                </div>
+            </li>
+            <li>
+                <i class="iconfont icon-weixin"></i>
+                <div class="out">
+                    <span class="iconfont icon-triangle-right"></span>
+                    <img src="img/erweima.png" alt="">
+                </div>
+            </li>
+            <li class="r-last">
+                <i class="iconfont icon-icon"></i>
+            </li>
+        </ul>
+    </div>
 	</body>
-
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/public.js"></script>
+	<script src="js/swiper-3.4.2.min.js"></script>
 	<script type="text/javascript">
 		//百度地图API功能
 		function loadJScript() {
