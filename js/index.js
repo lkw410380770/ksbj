@@ -39,7 +39,10 @@ $(function() {
 
     });
 
-
+    /**
+     * [oHj_picList description] 环境展示
+     * @type {[type]}
+     */
     var oHj_picList = $('.hj-picList>ul>li');
     oHj_picList.on('mouseover',function(){
     	$(this).find('div.maker').css({

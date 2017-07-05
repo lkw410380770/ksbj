@@ -77,20 +77,27 @@
 	line-height: 28px;
 	overflow: hidden;
 	margin:0 auto;
-    h4{
+    p{
         font-size: 16px;
         color:#777;
         font-weight: normal;
     }
+    img{
+       display:block;
+        height:auto; 
+        width:98%;
+        margin:40px auto; 
+        overflow: hidden;
+    }
 }
-.pic{
-	width:98%;
-	margin:40px auto;
-	font-size: 60px;
-    overflow: hidden;
-	img{
-		display:block;
-		height:auto;
-		width:100%;
-	}
+
+@media all and (max-width:968px){
+    .topImg{
+        margin-top:60px;
+    }
+}
+@media all and (max-width:420px){
+    .public-Title .public-middle span{
+        width:70px;
+    }
 }
