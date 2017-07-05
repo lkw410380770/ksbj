@@ -1,43 +1,34 @@
 $(function(){
-	//屏幕小于768时出现的导航按钮
-	var mediaShow = $('.mediaShow');
-	var navListBox = $('.navListBox');
-	var liChil = navListBox.find('li');
-	var oneHeight = liChil.first().outerHeight(true);
-	var boot = true;
-	 mediaShow.click(function(){
-	 	var disEle = navListBox.css('display');
-	 		if(boot){
-	 			navListBox.css({
-	 					'height':liChil.length*oneHeight,
-	 					
-	 			});
-	 			boot = false;
-	 		}else{
-	 			navListBox.css({
-	 					'height':0,
-	 					
-	 			});
-	 			boot = true;
-	 		}
+	 // 返回顶部
+    var oGoTop = $('.goTop');
+    oGoTop.on('click',function(ev){
+          ev.preventDefault();
+          $("html,body").animate({scrollTop:0}, 500);
+    })
 
-	 })
+    // 导航
+    var navLi = $('.n-list>ul>li>a');
+    navLi.mouseover(function() {
+        navLi.removeClass('active');
+        $(this).addClass('active');
+    });
+    var navBottom = $('.nav-bottom>ul>li>a');
+    navBottom.mouseover(function() {
+        navBottom.removeClass('active');
+        $(this).addClass('active');
+    });
+	 var hideBtn = $('.hideBtn');
+    var oHideUl = $('.navListBox');
+    var mask = $('.mask');
+    hideBtn.on('click',function(){
+        mask.fadeIn();
+        // oHideUl.css('right',"0");
+       oHideUl.addClass('addTrans');
+    });
+    mask.on('click',function(){
+      mask.fadeOut();
+      oHideUl.removeClass('addTrans')
+    })
 
-	 $('.link-btn').on('click',function(){
-	 	var self = $(this);
-	 	var oUl = $('.ulList');
-	 	var t = new TimelineMax();
-	 	var w = oUl.outerWidth(true);
-	 	var h = oUl.outerHeight(true);
-	 	oUl.css({
-	 		'display':'block',
-	 		'margin-left':-w/2,
-	 		'margin-top':-h/2
-	 	});
-	 	t.set(oUl,{x:-25+'%'})
-	 	t.to(oUl,0.5,{
-	 		y:-50+'%',
-	 			
-	 	})
-	 })
+	 
 });
