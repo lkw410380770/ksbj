@@ -87,21 +87,60 @@
 				<span class="next">下一篇：活动标题内容</span>
 			</div>
 			<!--评论-->
-			<div class="comment">
+			<!--<div class="comment">
 				<textarea placeholder="我也说一句..."></textarea>
 				<div class="login"><span>登录</span></div>
 				<p class="wb">我的2016评论盘点</p>
 				<!--评价图片，提交-->
-				<div class="other">
+			<!--<div class="other">
 					<span class="icon"></span>
 					<span class="icon"></span>
 					<span class="subBtn">畅言一下</span>
 				</div>
-			</div>
+			</div>-->
 			<!--已经存在的评价内容-->
-			<div class="existence">
+			<!--<div class="existence">
 				还没有评论，快来抢沙发吧！
-			</div>
+			</div>-->
+			<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+			<script type="text/javascript">
+				(function() {
+					var appid = 'cyt65mWX5';
+					var conf = 'prod_26da3649e6b9b5cacb3b2d614c63acaf';
+					var width = window.innerWidth || document.documentElement.clientWidth;
+					if(width < 960) {
+						window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>');
+					} else {
+						var loadJs = function(d, a) {
+							var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+							var b = document.createElement("script");
+							b.setAttribute("type", "text/javascript");
+							b.setAttribute("charset", "UTF-8");
+							b.setAttribute("src", d);
+							if(typeof a === "function") {
+								if(window.attachEvent) {
+									b.onreadystatechange = function() {
+										var e = b.readyState;
+										if(e === "loaded" || e === "complete") {
+											b.onreadystatechange = null;
+											a()
+										}
+									}
+								} else {
+									b.onload = a
+								}
+							}
+							c.appendChild(b)
+						};
+						loadJs("http://changyan.sohu.com/upload/changyan.js", function() {
+							window.changyan.api.config({
+								appid: appid,
+								conf: conf
+							})
+						});
+					}
+				})();
+			</script>
 			<!--热门动态-->
 			<div class="news">
 				<hr size="1" color="gainsboro" />
