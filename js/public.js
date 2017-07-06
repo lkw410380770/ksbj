@@ -1,11 +1,10 @@
 $(function() {
-    // 返回顶部
-    var oGoTop = $('.goTop');
-    oGoTop.on('click', function(ev) {
-        ev.preventDefault();
-        $("html,body").animate({ scrollTop: 0 }, 500);
+    //公共右侧
+    var comRight = $('.common-icon-nav>ul>li>i');
+    comRight.on('mouseover',function(){
+        comRight.next('div').removeClass('show-hover');
+        $(this).next('div').addClass('show-hover');
     })
-
     // 导航
     var navLi = $('.n-list>ul>li>a');
     navLi.mouseover(function() {

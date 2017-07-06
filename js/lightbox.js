@@ -51,30 +51,14 @@
         });
         //绑定前后切换按钮事件
         this.flag=true;//做一标识，防止双击时打乱了index
-        this.nextBtn.hover(function(){
-           if(!$(this).hasClass('disabled')&&self.groupData.length>1){
-               $(this).addClass('lightbox-next-btn-show');
-           };
-        },function(){
-            if(!$(this).hasClass('disabled')&&self.groupData.length>1){
-                $(this).removeClass('lightbox-next-btn-show');
-            }
-        }).click(function(e){
+        this.nextBtn.click(function(e){
            if(!$(this).hasClass('disabled')&&self.flag&&self.groupData.length>1){
                self.flag=false;
                e.stopPropagation();
                self.goto('next');
            };
         });
-        this.prevBtn.hover(function(){
-            if(!$(this).hasClass('disabled')&&self.groupData.length>1){
-                $(this).addClass('lightbox-prev-btn-show');
-            };
-        },function(){
-            if(!$(this).hasClass('disabled')&&self.groupData.length>1){
-                $(this).removeClass('lightbox-prev-btn-show');
-            }
-        }).click(function(e){
+        this.prevBtn.click(function(e){
             if(!$(this).hasClass('disabled')&&self.flag&&self.groupData.length>1){
                 self.flag=false;
                 e.stopPropagation();
@@ -122,7 +106,6 @@
         goto:function(dir){
             if(dir==='next'){
                 this.index++;//如果索引大于等于图片个数则让按钮不可用且不可见
-
                 if(this.index>=this.groupData.length-1){
                     this.nextBtn.addClass('disabled').removeClass('lightbox-next-btn-show');
                 }
@@ -304,12 +287,13 @@
                             '<span class="lightbox-btn lightbox-prev-btn lightbox-prev-btn-show"></span>'+
                             '<img src="img/aboutUs1.jpg" alt="" class="lightbox-image" width="100%"/>'+
                             '<span class="lightbox-btn lightbox-next-btn lightbox-next-btn-show"></span> '+
-                            '<span class="lightbox-close-btn"></span>'+
+                            '<span class="lightbox-close-btn"><i class="iconfont icon-guanbi"></i></span>'+
                         '</div>'+
                         '<div class="lightbox-pic-caption">'+
                             '<div class="lightbox-caption-area">'+
                                 '<span class="lightbox-of-index">当前索引：1 of 4</span>'+
                                 '<span class="lightbox-pic-desc">图片标题</span>'+
+                                '<ul><span>分享:</span><li><a><i class="iconfont icon-qq"></i></a></li><li><a><i class="iconfont icon-weixin"></i></a></li><li><a><i class="iconfont icon-weibo"></i></a></li></ul>'+
                             '</div>'+
                         '</div>'
             //插入到this.popupWin

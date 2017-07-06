@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Wed Jul  5 17:45:28 2017
+Created by FontForge 20120731 at Thu Jul  6 10:05:16 2017
  By admin
 </metadata>
 <defs>
@@ -43,6 +43,8 @@ q-28 -111 -119.5 -183t-209 -72zM659 386q-26 0 -45 18.5t-19 45t19 45t45 18.5t45 -
 d="M671 384l320 -319q33 -33 33 -79.5t-33.5 -80t-80 -33.5t-79.5 33l-319 320l-319 -320q-33 -33 -80 -33t-80 33.5t-33 80t33 79.5l319 319l-319 319q-33 33 -33 80t33 80t80 33t80 -33l319 -319l319 319q33 33 79.5 33t80 -33t33.5 -80t-33 -80z" />
     <glyph glyph-name="icon" unicode="&#xe64c;" 
 d="M512 496l-292 -292q-9 -9 -22 -9t-22.5 9.5t-9.5 22.5t10 22l314 314q9 9 22 9t22 -9l315 -314q9 -9 9 -22t-9 -22.5t-22.5 -9.5t-22.5 9z" />
+    <glyph glyph-name="guanbi" unicode="&#xe67a;" 
+d="M211 718l635 -635l-33 -33l-635 635zM846 685l-635 -635l-33 33l635 635z" />
     <glyph glyph-name="bTrigon" unicode="&#xe604;" 
 d="M314 780l396 -396l-396 -396v792z" />
     <glyph glyph-name="triangle-right" unicode="&#xe606;" 
