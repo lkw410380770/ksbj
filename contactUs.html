@@ -58,23 +58,22 @@
 				</div>
 			</div>
 			<div class="bottom">
-				<!--地图-->
 				<form class="inputs" action="" method="post">
 					<div class="name">
 						<label>姓名</label><br />
-						<input type="text" name="" id="" value="" placeholder="请输入您的姓名" />
+						<input type="text" name="" id="name" value="" placeholder="请输入您的姓名" />
 					</div>
 					<div class="tel">
 						<label>电话</label><br />
-						<input type="tel" name="" id="" value="" placeholder="请输入您的手机号" />
+						<input type="tel" name="" id="tel" value="" placeholder="请输入您的手机号" />
 					</div>
 					<div class="email">
 						<label>邮箱</label><br />
-						<input type="email" name="" id="" value="" placeholder="请输入您的常用邮箱" />
+						<input type="email" name="" id="email" value="" placeholder="请输入您的常用邮箱" />
 					</div>
-					<div class="tel">
+					<div class="ly">
 						<label>给我们留言</label><br />
-						<textarea name="" rows="" cols="" placeholder="提出您宝贵的意见，帮助我们一起进步"></textarea>
+						<textarea name="" id="text" rows="" cols="" placeholder="提出您宝贵的意见，帮助我们一起进步"></textarea>
 					</div>
 					<div class="subBtn">提交</div>
 				</form>
@@ -88,6 +87,7 @@
 
 				</div>
 			</div>
+			<!--地图-->
 			<div class="map" id="allmap">
 
 			</div>
@@ -151,8 +151,8 @@
 						<a href="">友情链接</a>
 					</li>
 					<li class="lasChild">
-                    <i class="iconfont icon-guandiaotongzhi"></i>
-                </li>
+						<i class="iconfont icon-guandiaotongzhi"></i>
+					</li>
 				</ul>
 			</div>
 			<div class="banquan">
@@ -171,57 +171,38 @@
 			</div>
 		</footer>
 		<div class="common-icon-nav">
-        <ul>
-            <li>
-                <i class="iconfont icon-dianhua"></i>
-                <div class="out">
-                    <span class="iconfont icon-triangle-right"></span>
-                    <h4><i class="iconfont icon-dianhua1"></i>全国客服热线</h4>
-                    <p>025-86111813</p>
-                </div>
-            </li>
-            <li>
-                <i class="iconfont icon-qq"></i>
-                <div class="out">
-                    <span class="iconfont icon-triangle-right"></span>
-                    <p>025-86111813</p>
-                </div>
-            </li>
-            <li>
-                <i class="iconfont icon-weixin"></i>
-                <div class="out">
-                    <span class="iconfont icon-triangle-right"></span>
-                    <img src="img/erweima.png" alt="">
-                </div>
-            </li>
-            <li class="r-last">
-                <i class="iconfont icon-icon"></i>
-            </li>
-        </ul>
-    </div>
+			<ul>
+				<li>
+					<i class="iconfont icon-dianhua"></i>
+					<div class="out">
+						<span class="iconfont icon-triangle-right"></span>
+						<h4><i class="iconfont icon-dianhua1"></i>全国客服热线</h4>
+						<p>025-86111813</p>
+					</div>
+				</li>
+				<li>
+					<i class="iconfont icon-qq"></i>
+					<div class="out">
+						<span class="iconfont icon-triangle-right"></span>
+						<p>025-86111813</p>
+					</div>
+				</li>
+				<li>
+					<i class="iconfont icon-weixin"></i>
+					<div class="out">
+						<span class="iconfont icon-triangle-right"></span>
+						<img src="img/erweima.png" alt="">
+					</div>
+				</li>
+				<li class="r-last">
+					<i class="iconfont icon-icon"></i>
+				</li>
+			</ul>
+		</div>
 	</body>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/public.js"></script>
 	<script src="js/swiper-3.4.2.min.js"></script>
-	<script type="text/javascript">
-		//百度地图API功能
-		function loadJScript() {
-			var script = document.createElement("script");
-			script.type = "text/javascript";
-			script.src = "http://api.map.baidu.com/api?v=2.0&ak=Nj6F7YxqAEUhrXEsujW3fKM482MRQbc7&callback=init";
-			document.body.appendChild(script);
-		}
-
-		function init() {
-			var map = new BMap.Map("allmap"); // 创建Map实例
-			var point = new BMap.Point(106.697331, 26.575015); // 创建点坐标
-			map.centerAndZoom(point, 15);
-			map.enableScrollWheelZoom();
-			var marker = new BMap.Marker(point); // 创建标注
-			map.addOverlay(marker); // 将标注添加到地图中
-			marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画                 //启用滚轮放大缩小
-		}
-		window.onload = loadJScript; //异步加载地图
-	</script>
+	<script src="js/contactUs.js" type="text/javascript" charset="utf-8"></script>
 
 </html>

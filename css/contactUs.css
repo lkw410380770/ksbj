@@ -202,7 +202,6 @@ body {
 	width: 38%;
 	float: right;
 }
-
 .content .bottom .text .mode {
 	width: 300px;
 	height: 90px;
@@ -210,6 +209,7 @@ body {
 	background: -o-linear-gradient(right, #2097ea, #1471d0);
 	background: -moz-linear-gradient(right, #2097ea, #1471d0);
 	background: linear-gradient(to right, #2097ea, #1471d0);
+	box-shadow: 0px 10px 20px 0px rgba(4, 95, 185, 0.8);
 	margin-bottom: 20px;
 	line-height: 90px;
 	border-radius: 6px;

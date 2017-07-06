@@ -91,6 +91,18 @@ body {
 	box-shadow: 0 6px 15px 0 rgba(229, 156, 0, .3);
 }
 
+@media only screen and (max-width: 600px) {
+	.content .bannar .swiper-slide h2 {
+		width: 80px;
+		height: 30px;
+		font-size: 12px;
+		line-height: 30px;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+
 
 /*swiper按钮*/
 
@@ -126,15 +138,15 @@ body {
 	.swiper-button-prev,
 	.swiper-button-next {
 		display: block;
-		width: 30px;
-		height: 81px;
-		border-radius: 30px;
-		background-size: 36%;
+		width: 24px;
+		height: 60px;
+		border-radius: 24px;
+		background-size: 30%;
 		background-color: #ffcc00;
 		font-size: 16px !important;
 		color: white !important;
 		position: absolute;
-		top: 40%;
+		top: 45%;
 	}
 }
 
@@ -294,7 +306,7 @@ body {
 @media only screen and (max-width: 850px) {
 	.content .pagination {
 		width: 90%;
-		max-width:none;
+		max-width: none;
 	}
 }
 
